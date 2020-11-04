@@ -12,6 +12,38 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="DataTables-1.10.22/css/dataTables.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="Buttons-1.6.5/css/buttons.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="FixedHeader-3.1.7/css/fixedHeader.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="KeyTable-2.5.3/css/keyTable.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="Responsive-2.2.6/css/responsive.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="RowGroup-1.1.2/css/rowGroup.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="Scroller-2.0.3/css/scroller.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="SearchBuilder-1.0.0/css/searchBuilder.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="SearchPanes-1.2.1/css/searchPanes.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href="Select-1.3.1/css/select.bootstrap4.min.css"/>
+ 
+ 
+<script type="text/javascript" src="DataTables-1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="DataTables-1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="Buttons-1.6.5/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="Buttons-1.6.5/js/buttons.bootstrap4.min.js"></script>
+<script type="text/javascript" src="Buttons-1.6.5/js/buttons.colVis.min.js"></script>
+<script type="text/javascript" src="FixedHeader-3.1.7/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" src="KeyTable-2.5.3/js/dataTables.keyTable.min.js"></script>
+<script type="text/javascript" src="Responsive-2.2.6/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="Responsive-2.2.6/js/responsive.bootstrap4.min.js"></script>
+<script type="text/javascript" src="RowGroup-1.1.2/js/dataTables.rowGroup.min.js"></script>
+<script type="text/javascript" src="Scroller-2.0.3/js/dataTables.scroller.min.js"></script>
+<script type="text/javascript" src="SearchBuilder-1.0.0/js/dataTables.searchBuilder.min.js"></script>
+<script type="text/javascript" src="SearchBuilder-1.0.0/js/searchBuilder.bootstrap4.min.js"></script>
+<script type="text/javascript" src="SearchPanes-1.2.1/js/dataTables.searchPanes.min.js"></script>
+<script type="text/javascript" src="SearchPanes-1.2.1/js/searchPanes.bootstrap4.min.js"></script>
+<script type="text/javascript" src="Select-1.3.1/js/dataTables.select.min.js"></script>
+
 
 </head>
 
@@ -59,2673 +91,4944 @@
 	        <p>Type !joinqueue to enter your name into the name-pool! This will give you a chance to have your own character in game! (Only one per person)</p>
 
 		<p><b>Click on "Events" in the top bar to see the list of purchaseable events!</b></p>
-			    <table id="myTable" class="table table-bordered table-hover table-condensed">
-<thead><tr>
-<th title="Field #1" onclick="sortTable(0)">itemname</th>
-<th title="Field #2" onclick="sortTable(1)">price</th>
-<th title="Field #3" onclick="sortTable(2)">category</th>
-<th title="Field #4" onclick="sortTable(3)">item description</th>
+			    <table id="myTable" class="table table-striped table-bordered" style="width:100%">
+<thead><tr><th>ItemName</th>
+<th>Price</th>
+<th>Category</th>
+<th>Description</th>
 </tr></thead>
 <tbody><tr>
 <td>15cmherocket</td>
-<td align="right">167</td>
-<td>Security</td>
-<td>Rocket for 15cm Nebelwerfer rocket launcher</td>
+<td>167</td>
+<td>15cm Nebelwerfer 41 ammo</td>
+<td>Shell_Nebelwerfer_41_HE_RA</td>
 </tr>
 <tr>
 <td>15cmnebelwerfer41</td>
-<td align="right">1567</td>
+<td>1567</td>
 <td>Security</td>
-<td>15cm Nebelwerfer artillery rocket launcher, German WW2 era</td>
+<td>Turret_Nebelwerfer_41_KA</td>
 </tr>
 <tr>
 <td>2cmflak38camouflagepaint</td>
-<td align="right">1300</td>
+<td>1300</td>
 <td>Security</td>
-<td>2cm Flak 38 Anti-Air gun, German WW2 era</td>
+<td>Turret_Flak_38_Camo_RA</td>
 </tr>
 <tr>
 <td>2cmhefi-tbelt</td>
-<td align="right">167</td>
-<td>Security</td>
-<td>Ammo for 2cm Flak 38 Anti-Air gun</td>
-</tr>
-<tr>
-<td>3,7cmapcrshell</td>
-<td align="right">167</td>
-<td>Security</td>
-<td>APCR round for Pak 36 Anti-Tank gun</td>
-</tr>
-<tr>
-<td>3,7cmheshell</td>
-<td align="right">167</td>
-<td>Security</td>
-<td>HE round for Pak 36 Anti-Tank gun</td>
-</tr>
-<tr>
-<td>3,7cmpak36</td>
-<td align="right">1467</td>
-<td>Security</td>
-<td>3.7cm PAK 36 Anti-Tank gun, German WW2 Era</td>
+<td>167</td>
+<td>2cm Flak 38 ammo</td>
+<td>Belt_Flak_38_HEFIT_RA</td>
 </tr>
 <tr>
 <td>7,5cmapcrshell</td>
-<td align="right">167</td>
-<td>Security</td>
-<td>APCR round for Pak 40 Anti-Tank gun</td>
+<td>167</td>
+<td>7,5cm PaK 40 ammo</td>
+<td>Shell_PaK_40_APCR_RA</td>
 </tr>
 <tr>
 <td>7,5cmheshell</td>
-<td align="right">167</td>
+<td>167</td>
+<td>7,5cm PaK 40 ammo</td>
+<td>Shell_PaK_40_HE_RA</td>
+</tr>
+<tr>
+<td>7,5cmle.ig18</td>
+<td>1083</td>
 <td>Security</td>
-<td>HE round for Pak 40 Anti-Tank gun</td>
+<td>Turret_leIG_18_RA</td>
+</tr>
+<tr>
+<td>7,5cmle.ig18heshell</td>
+<td>167</td>
+<td>7,5cm le.IG 18 ammo</td>
+<td>Shell_leIG_18_HE_RA</td>
 </tr>
 <tr>
 <td>7,5cmpak40camouflagepaint</td>
-<td align="right">3050</td>
+<td>3050</td>
 <td>Security</td>
-<td>7.5 cm Pak 40 Anti-Tank gun, German WW2 era</td>
+<td>Turret_PaK_40_Camo_RA</td>
 </tr>
 <tr>
 <td>advancedbionicarm</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Bionic</td>
 <td>AvaliAdvancedBionicArm</td>
 </tr>
 <tr>
 <td>advancedbionicavalileg</td>
-<td align="right">1925</td>
+<td>1925</td>
 <td>Bionic</td>
 <td>AvaliAdvancedBionicLeg</td>
 </tr>
 <tr>
 <td>advancedbionicavalitail</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Bionic</td>
 <td>AvaliAdvancedBionicTail</td>
 </tr>
 <tr>
 <td>advancedcomponent</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Manufactured</td>
 <td>ComponentSpacer</td>
 </tr>
 <tr>
 <td>advancedtemperaturecontrolaugment[tca]</td>
-<td align="right">83</td>
+<td>83</td>
 <td>Bionic</td>
-<td>Augment for Avali to properly survive in different temperatures</td>
+<td>AvaliAdvTempControl</td>
 </tr>
 <tr>
 <td>aero-tungstencarbide</td>
-<td align="right">33</td>
+<td>33</td>
 <td>Avali resources</td>
-<td>AeroTungstenCarbide, an advanced, high quality Avali material</td>
-</tr>
-<tr>
-<td>agavefruit</td>
-<td align="right">2</td>
-<td>Vegetarian</td>
-<td>RawAgave</td>
+<td>AeroTungstenCarbide</td>
 </tr>
 <tr>
 <td>alpaca</td>
-<td align="right">583</td>
+<td>583</td>
 <td>Animal</td>
 <td>Alpaca</td>
 </tr>
 <tr>
 <td>alpacameat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Alpaca</td>
 </tr>
 <tr>
 <td>alpacawool</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Textiles</td>
 <td>WoolAlpaca</td>
 </tr>
 <tr>
 <td>alphabeaver</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Animal</td>
 <td>Alphabeaver</td>
 </tr>
 <tr>
 <td>alphabeavermeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Alphabeaver</td>
 </tr>
 <tr>
 <td>ambrosia</td>
-<td align="right">25</td>
+<td>25</td>
 <td>Drugs</td>
-<td>A soft fruit. Ambrosia has a wonderful smell and taste, and produces a soft chemical high, which increases mood. However, it is slightly addictive if eaten too often.</td>
+<td>Ambrosia</td>
 </tr>
 <tr>
 <td>animalbed</td>
-<td align="right">136</td>
+<td>136</td>
 <td>Furniture</td>
 <td>AnimalBed</td>
 </tr>
 <tr>
 <td>animalsleepingbox</td>
-<td align="right">84</td>
+<td>84</td>
 <td>Furniture</td>
 <td>AnimalSleepingBox</td>
 </tr>
 <tr>
 <td>antigrainwarhead</td>
-<td align="right">2000</td>
+<td>2000</td>
 <td>Mortar shells</td>
-<td>Nuclear Mortar Shell</td>
+<td>Shell_AntigrainWarhead</td>
 </tr>
 <tr>
 <td>archotecharm</td>
-<td align="right">4667</td>
+<td>4667</td>
 <td>Archotech</td>
-<td>Extremely advanced Bionic Arm</td>
+<td>ArchotechArm</td>
 </tr>
 <tr>
 <td>archotecheye</td>
-<td align="right">4667</td>
+<td>4667</td>
 <td>Archotech</td>
-<td>Extremely advanced Bionic Eye</td>
+<td>ArchotechEye</td>
 </tr>
 <tr>
 <td>archotechleg</td>
-<td align="right">4667</td>
+<td>4667</td>
 <td>Archotech</td>
-<td>Extremely advanced Bionic Leg</td>
+<td>ArchotechLeg</td>
 </tr>
 <tr>
 <td>arcticfox</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Fox_Arctic</td>
 </tr>
 <tr>
 <td>arcticwolf</td>
-<td align="right">583</td>
+<td>583</td>
 <td>Animal</td>
 <td>Wolf_Arctic</td>
 </tr>
 <tr>
 <td>armchair</td>
-<td align="right">450</td>
+<td>450</td>
 <td>Furniture</td>
 <td>Armchair</td>
 </tr>
 <tr>
 <td>artbench</td>
-<td align="right">425</td>
+<td>425</td>
 <td>Production</td>
 <td>TableSculpting</td>
 </tr>
 <tr>
+<td>assaultrifle</td>
+<td>800</td>
+<td>Ranged weapons</td>
+<td>Gun_AssaultRifle</td>
+</tr>
+<tr>
 <td>autophagicsystemrewriteaugment</td>
-<td align="right">250</td>
+<td>250</td>
 <td>Bionic</td>
-<td>Does some weird science shit to make Avali bodies more productive</td>
+<td>AvaliASR</td>
+</tr>
+<tr>
+<td>autopistol</td>
+<td>232</td>
+<td>Ranged weapons</td>
+<td>Gun_Autopistol</td>
 </tr>
 <tr>
 <td>avalileather</td>
-<td align="right">7</td>
+<td>7</td>
 <td>Leathers</td>
-<td>Avali skin. Why?</td>
+<td>Leather_RimVali</td>
 </tr>
 <tr>
 <td>avalimeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
-<td>You sicko.</td>
+<td>Meat_RimVali</td>
 </tr>
 <tr>
 <td>avalinano-printingforge</td>
-<td align="right">1783</td>
+<td>1783</td>
 <td>Production</td>
-<td>Allows for production of Avali materials/equipment</td>
+<td>AvaliNanoForge</td>
 </tr>
 <tr>
 <td>avalinano-printingloom</td>
-<td align="right">1783</td>
+<td>1783</td>
 <td>Production</td>
-<td>Allows for production of Avali materials/equipment</td>
+<td>AvaliNanoLoom</td>
 </tr>
 <tr>
 <td>avalipistol</td>
-<td align="right">295</td>
+<td>295</td>
 <td>Ranged weapons</td>
 <td>AvaliPistol</td>
 </tr>
 <tr>
 <td>avaliresearchbench</td>
-<td align="right">1383</td>
+<td>1383</td>
 <td>Production</td>
-<td>Allows for research of Avali Tech</td>
+<td>AvaliResearchBench</td>
 </tr>
 <tr>
 <td>avalirifle</td>
-<td align="right">1142</td>
+<td>1142</td>
 <td>Ranged weapons</td>
 <td>AvaliRifle</td>
 </tr>
 <tr>
 <td>avaliscythe</td>
-<td align="right">212</td>
+<td>212</td>
 <td>Melee weapons</td>
 <td>AvaliScythe</td>
 </tr>
 <tr>
 <td>avalishotgun</td>
-<td align="right">883</td>
+<td>883</td>
 <td>Ranged weapons</td>
 <td>AvaliShotgun</td>
 </tr>
 <tr>
 <td>avalismg</td>
-<td align="right">2508</td>
+<td>2508</td>
 <td>Ranged weapons</td>
 <td>AvaliSMG</td>
 </tr>
 <tr>
 <td>avalisniperrifle</td>
-<td align="right">2517</td>
+<td>2517</td>
 <td>Ranged weapons</td>
 <td>AvaliSniperRifle</td>
 </tr>
 <tr>
 <td>avalispear</td>
-<td align="right">296</td>
+<td>296</td>
 <td>Melee weapons</td>
 <td>AvaliSpear</td>
 </tr>
 <tr>
 <td>avalitail</td>
-<td align="right">17</td>
+<td>17</td>
 <td>Natural</td>
 <td>RimValiTail</td>
 </tr>
 <tr>
 <td>avaliturret</td>
-<td align="right">492</td>
+<td>492</td>
 <td>Security</td>
 <td>AvaliBasicTurret</td>
 </tr>
 <tr>
 <td>avaliviroblade</td>
-<td align="right">667</td>
+<td>667</td>
 <td>Melee weapons</td>
-<td>Avali Sciency sword</td>
+<td>AvaliViroblade</td>
 </tr>
 <tr>
 <td>basicbionicarm</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Bionic</td>
 <td>AvaliBasicBionicArm</td>
 </tr>
 <tr>
 <td>basicbionicavalileg</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Bionic</td>
 <td>AvaliBasicBionicLeg</td>
 </tr>
 <tr>
 <td>basicbionicavalitail</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Bionic</td>
 <td>AvaliBasicBionicTail</td>
 </tr>
 <tr>
 <td>basictemperaturecontrolaugment[tca]</td>
-<td align="right">83</td>
+<td>83</td>
 <td>Bionic</td>
 <td>AvaliBasicTempControl</td>
 </tr>
 <tr>
 <td>battery</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Power</td>
 <td>Battery</td>
 </tr>
 <tr>
 <td>bearmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Bear_Grizzly</td>
 </tr>
 <tr>
-<td>bearskin</td>
-<td align="right">6</td>
-<td>Leathers</td>
-<td>Leather_Bear</td>
-</tr>
-<tr>
 <td>bed</td>
-<td align="right">155</td>
+<td>155</td>
 <td>Furniture</td>
 <td>Bed</td>
 </tr>
 <tr>
 <td>bedroll</td>
-<td align="right">137</td>
+<td>137</td>
 <td>Furniture</td>
 <td>Bedroll</td>
 </tr>
 <tr>
 <td>beef</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Cow</td>
 </tr>
 <tr>
 <td>beer</td>
-<td align="right">20</td>
+<td>20</td>
 <td>Drugs</td>
-<td>Beer can taste good, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.</td>
+<td>Beer</td>
 </tr>
 <tr>
 <td>berries</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Vegetarian</td>
 <td>RawBerries</td>
 </tr>
 <tr>
 <td>billiardstable</td>
-<td align="right">600</td>
+<td>600</td>
 <td>Furniture</td>
 <td>BilliardsTable</td>
 </tr>
 <tr>
 <td>bionicarm</td>
-<td align="right">1717</td>
+<td>1717</td>
 <td>Bionic</td>
 <td>BionicArm</td>
 </tr>
 <tr>
 <td>bionicear</td>
-<td align="right">1308</td>
+<td>1308</td>
 <td>Bionic</td>
 <td>BionicEar</td>
 </tr>
 <tr>
 <td>bioniceye</td>
-<td align="right">1717</td>
+<td>1717</td>
 <td>Bionic</td>
 <td>BionicEye</td>
 </tr>
 <tr>
 <td>bionicheart</td>
-<td align="right">1717</td>
+<td>1717</td>
 <td>Bionic</td>
 <td>BionicHeart</td>
 </tr>
 <tr>
+<td>bionicleg</td>
+<td>1717</td>
+<td>Bionic</td>
+<td>BionicLeg</td>
+</tr>
+<tr>
 <td>bionicspine</td>
-<td align="right">1717</td>
+<td>1717</td>
 <td>Bionic</td>
 <td>BionicSpine</td>
 </tr>
 <tr>
 <td>bionicstomach</td>
-<td align="right">1308</td>
+<td>1308</td>
 <td>Bionic</td>
 <td>BionicStomach</td>
 </tr>
 <tr>
+<td>birdmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_Cassowary</td>
+</tr>
+<tr>
+<td>birdskin</td>
+<td>3</td>
+<td>Leathers</td>
+<td>Leather_Bird</td>
+</tr>
+<tr>
 <td>bison</td>
-<td align="right">583</td>
+<td>583</td>
 <td>Animal</td>
 <td>Bison</td>
 </tr>
 <tr>
 <td>bisonmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Bison</td>
 </tr>
 <tr>
 <td>bisonwool</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Textiles</td>
 <td>WoolBison</td>
 </tr>
 <tr>
 <td>bluefur</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Leathers</td>
 <td>Leather_Bluefur</td>
 </tr>
 <tr>
+<td>bolt-actionrifle</td>
+<td>425</td>
+<td>Ranged weapons</td>
+<td>Gun_BoltActionRifle</td>
+</tr>
+<tr>
 <td>boomalope</td>
-<td align="right">583</td>
+<td>800</td>
 <td>Animal</td>
 <td>Boomalope</td>
 </tr>
 <tr>
 <td>boomalopemeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Boomalope</td>
 </tr>
 <tr>
 <td>boomrat</td>
-<td align="right">167</td>
+<td>800</td>
 <td>Animal</td>
 <td>Boomrat</td>
 </tr>
 <tr>
 <td>boomratmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Boomrat</td>
 </tr>
 <tr>
 <td>bowlerhat</td>
-<td align="right">77</td>
+<td>77</td>
 <td>Headgear</td>
 <td>Apparel_BowlerHat</td>
 </tr>
 <tr>
 <td>brewery</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Production</td>
 <td>Brewery</td>
 </tr>
 <tr>
 <td>butchertable</td>
-<td align="right">302</td>
+<td>302</td>
 <td>Production</td>
 <td>TableButcher</td>
 </tr>
 <tr>
-<td>button-downshirt</td>
-<td align="right">166</td>
-<td>Apparel</td>
-<td>Apparel_CollarShirt</td>
-</tr>
-<tr>
 <td>camelhide</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Leathers</td>
 <td>Leather_Camel</td>
 </tr>
 <tr>
 <td>capybara</td>
-<td align="right">250</td>
+<td>250</td>
 <td>Animal</td>
 <td>Capybara</td>
 </tr>
 <tr>
 <td>capybarameat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Capybara</td>
 </tr>
 <tr>
 <td>caribou</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Animal</td>
 <td>Caribou</td>
 </tr>
 <tr>
 <td>cariboumeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Caribou</td>
 </tr>
 <tr>
 <td>cassowary</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Cassowary</td>
 </tr>
 <tr>
 <td>cat</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>Cat</td>
 </tr>
 <tr>
 <td>catmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Cat</td>
 </tr>
 <tr>
 <td>chainshotgun</td>
-<td align="right">675</td>
+<td>675</td>
 <td>Ranged weapons</td>
 <td>Gun_ChainShotgun</td>
 </tr>
 <tr>
 <td>chargelance</td>
-<td align="right">2258</td>
+<td>2258</td>
 <td>Ranged weapons</td>
 <td>Gun_ChargeLance</td>
 </tr>
 <tr>
 <td>chargerifle</td>
-<td align="right">1683</td>
+<td>1683</td>
 <td>Ranged weapons</td>
 <td>Gun_ChargeRifle</td>
 </tr>
 <tr>
 <td>chemfuel</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Manufactured</td>
-<td>Chemfuel, fuel used for many things</td>
+<td>Chemfuel</td>
 </tr>
 <tr>
 <td>chesstable</td>
-<td align="right">281</td>
+<td>281</td>
 <td>Furniture</td>
 <td>ChessTable</td>
 </tr>
 <tr>
 <td>chicken</td>
-<td align="right">83</td>
+<td>150</td>
 <td>Animal</td>
 <td>Chicken</td>
 </tr>
 <tr>
+<td>chickenegg(unfert.)</td>
+<td>12</td>
+<td>Eggs (unfert.)</td>
+<td>EggChickenUnfertilized</td>
+</tr>
+<tr>
 <td>chickenmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Chicken</td>
 </tr>
 <tr>
 <td>chinchilla</td>
-<td align="right">250</td>
+<td>250</td>
 <td>Animal</td>
 <td>Chinchilla</td>
 </tr>
 <tr>
 <td>chinchillafur</td>
-<td align="right">11</td>
+<td>11</td>
 <td>Leathers</td>
 <td>Leather_Chinchilla</td>
 </tr>
 <tr>
 <td>chinchillameat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Chinchilla</td>
 </tr>
 <tr>
 <td>chocolate</td>
-<td align="right">5</td>
+<td>5</td>
 <td>Foods</td>
-<td>Chocolate!</td>
+<td>Chocolate</td>
 </tr>
 <tr>
 <td>cloth</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Textiles</td>
 <td>Cloth</td>
 </tr>
 <tr>
 <td>club</td>
-<td align="right">141</td>
+<td>141</td>
 <td>Melee weapons</td>
 <td>MeleeWeapon_Club</td>
 </tr>
 <tr>
 <td>cobra</td>
-<td align="right">250</td>
+<td>250</td>
 <td>Animal</td>
 <td>Cobra</td>
 </tr>
 <tr>
 <td>cobraegg(fert.)</td>
-<td align="right">67</td>
+<td>67</td>
 <td>Eggs (fert.)</td>
-<td>Cobra Egg</td>
+<td>EggCobraFertilized</td>
 </tr>
 <tr>
 <td>cobrameat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Cobra</td>
 </tr>
 <tr>
+<td>cochlearimplant</td>
+<td>367</td>
+<td>Prosthetic</td>
+<td>CochlearImplant</td>
+</tr>
+<tr>
 <td>component</td>
-<td align="right">53</td>
+<td>53</td>
 <td>Manufactured</td>
-<td>Components are extremely vital resources for construction</td>
+<td>ComponentIndustrial</td>
 </tr>
 <tr>
 <td>corn</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Vegetarian</td>
 <td>RawCorn</td>
 </tr>
 <tr>
 <td>cougar</td>
-<td align="right">667</td>
+<td>667</td>
 <td>Animal</td>
 <td>Cougar</td>
 </tr>
 <tr>
 <td>cougarmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Cougar</td>
 </tr>
 <tr>
 <td>cow</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Animal</td>
 <td>Cow</td>
 </tr>
 <tr>
 <td>cowboyhat</td>
-<td align="right">94</td>
+<td>94</td>
 <td>Headgear</td>
 <td>Apparel_CowboyHat</td>
 </tr>
 <tr>
+<td>deathacidifier</td>
+<td>667</td>
+<td>Bionic</td>
+<td>DeathAcidifier</td>
+</tr>
+<tr>
 <td>deepdrill</td>
-<td align="right">483</td>
+<td>483</td>
 <td>Production</td>
-<td>Used for mining</td>
+<td>DeepDrill</td>
 </tr>
 <tr>
 <td>deer</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Animal</td>
 <td>Deer</td>
 </tr>
 <tr>
 <td>devilstrand</td>
-<td align="right">9</td>
+<td>9</td>
 <td>Textiles</td>
 <td>DevilstrandCloth</td>
 </tr>
 <tr>
 <td>diningchair</td>
-<td align="right">198</td>
+<td>198</td>
 <td>Furniture</td>
 <td>DiningChair</td>
 </tr>
 <tr>
 <td>dogleather</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Leathers</td>
 <td>Leather_Dog</td>
 </tr>
 <tr>
 <td>donkey</td>
-<td align="right">533</td>
+<td>533</td>
 <td>Animal</td>
 <td>Donkey</td>
 </tr>
 <tr>
 <td>donkeymeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Donkey</td>
 </tr>
 <tr>
 <td>doomsdayrocketlauncher</td>
-<td align="right">1667</td>
+<td>1667</td>
 <td>Ranged weapons</td>
-<td>Extremely powerful, single use rocket launcher</td>
+<td>Gun_DoomsdayRocket</td>
 </tr>
 <tr>
 <td>doublebed</td>
-<td align="right">292</td>
+<td>292</td>
 <td>Furniture</td>
 <td>DoubleBed</td>
 </tr>
 <tr>
 <td>doublebedroll</td>
-<td align="right">290</td>
+<td>290</td>
 <td>Furniture</td>
 <td>BedrollDouble</td>
 </tr>
 <tr>
 <td>dresser</td>
-<td align="right">179</td>
+<td>179</td>
 <td>Furniture</td>
 <td>Dresser</td>
 </tr>
 <tr>
 <td>dromedary</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Animal</td>
 <td>Dromedary</td>
 </tr>
 <tr>
 <td>dromedarymeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Dromedary</td>
 </tr>
 <tr>
 <td>druglab</td>
-<td align="right">742</td>
+<td>742</td>
 <td>Production</td>
 <td>DrugLab</td>
 </tr>
 <tr>
 <td>duck</td>
-<td align="right">100</td>
+<td>200</td>
 <td>Animal</td>
 <td>Duck</td>
 </tr>
 <tr>
-<td>duckegg(fert.)</td>
-<td align="right">12</td>
-<td>Eggs (fert.)</td>
-<td>EggDuckFertilized</td>
-</tr>
-<tr>
 <td>duckmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Duck</td>
 </tr>
 <tr>
 <td>duster</td>
-<td align="right">327</td>
+<td>327</td>
 <td>Apparel</td>
-<td>Duster, a really fuckin sick looking jacket</td>
+<td>Apparel_Duster</td>
 </tr>
 <tr>
 <td>eintossflammenwerfer46</td>
-<td align="right">342</td>
+<td>342</td>
 <td>Weapon</td>
-<td>Eintossflammenwerfer46 is a single use, cheap flamethrower.</td>
+<td>Gun_Eintossflammenwerfer_46_RA</td>
 </tr>
 <tr>
 <td>electricsmelter</td>
-<td align="right">667</td>
+<td>667</td>
 <td>Production</td>
 <td>ElectricSmelter</td>
 </tr>
 <tr>
 <td>electricsmithy</td>
-<td align="right">492</td>
+<td>492</td>
 <td>Production</td>
 <td>ElectricSmithy</td>
 </tr>
 <tr>
 <td>electricstove</td>
-<td align="right">375</td>
+<td>375</td>
 <td>Production</td>
 <td>ElectricStove</td>
 </tr>
 <tr>
 <td>electrictailorbench</td>
-<td align="right">533</td>
+<td>533</td>
 <td>Production</td>
 <td>ElectricTailoringBench</td>
 </tr>
 <tr>
 <td>elephant</td>
-<td align="right">1000</td>
+<td>1000</td>
 <td>Animal</td>
 <td>Elephant</td>
 </tr>
 <tr>
 <td>elephantleather</td>
-<td align="right">5</td>
+<td>5</td>
 <td>Leathers</td>
 <td>Leather_Elephant</td>
 </tr>
 <tr>
 <td>elephantmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Elephant</td>
 </tr>
 <tr>
 <td>elephanttusk</td>
-<td align="right">133</td>
+<td>133</td>
 <td>Items</td>
 <td>ElephantTusk</td>
 </tr>
 <tr>
 <td>elitetemperaturecontrolaugment[tca]</td>
-<td align="right">800</td>
+<td>800</td>
 <td>Bionic</td>
-<td>Implant provides advanced Temperature Control, allowing avali to withstand more temperatures</td>
+<td>AvaliEliteTempControl</td>
 </tr>
 <tr>
 <td>elk</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Animal</td>
 <td>Elk</td>
 </tr>
 <tr>
 <td>elkmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Elk</td>
 </tr>
 <tr>
 <td>empgrenades</td>
-<td align="right">525</td>
+<td>525</td>
 <td>Grenades</td>
-<td>EMP Grenade</td>
+<td>Weapon_GrenadeEMP</td>
 </tr>
 <tr>
 <td>emplauncher</td>
-<td align="right">842</td>
+<td>842</td>
 <td>Ranged weapons</td>
-<td>EMP Grenade Launcher</td>
+<td>Gun_EmpLauncher</td>
+</tr>
+<tr>
+<td>empshell</td>
+<td>92</td>
+<td>Mortar shells</td>
+<td>Shell_EMP</td>
 </tr>
 <tr>
 <td>emu</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
-<td>God foresaken animal</td>
+<td>Emu</td>
 </tr>
 <tr>
 <td>endtable</td>
-<td align="right">106</td>
+<td>106</td>
 <td>Furniture</td>
 <td>EndTable</td>
 </tr>
 <tr>
 <td>fennecfox</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Fox_Fennec</td>
 </tr>
 <tr>
 <td>fermentingbarrel</td>
-<td align="right">95</td>
+<td>95</td>
 <td>Production</td>
-<td>Used to produce alcohol and drugs</td>
+<td>FermentingBarrel</td>
 </tr>
 <tr>
 <td>ferrogel</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Avali resources</td>
-<td>Aerogel is an orange, basic Avali material</td>
+<td>AvaliAerogel</td>
 </tr>
 <tr>
 <td>ferroweave</td>
-<td align="right">6</td>
+<td>6</td>
 <td>Avali resources</td>
-<td>Aeroweave is a slightly advanced Avali material</td>
+<td>AvaliAeroweave</td>
 </tr>
 <tr>
 <td>fg42</td>
-<td align="right">917</td>
+<td>917</td>
 <td>Weapon</td>
-<td>The FG42 is a fully automatic rifle, German WW2 era</td>
+<td>Gun_FG_42_RA</td>
 </tr>
 <tr>
 <td>finemeal</td>
-<td align="right">33</td>
+<td>33</td>
 <td>Meals</td>
-<td>Good food for the colonists</td>
+<td>MealFine</td>
 </tr>
 <tr>
 <td>firefoampopper</td>
-<td align="right">300</td>
+<td>300</td>
 <td>Misc</td>
-<td>Firefoam dispenser, used to combat fires</td>
+<td>FirefoamPopper</td>
 </tr>
 <tr>
 <td>firefoamshell</td>
-<td align="right">92</td>
+<td>92</td>
 <td>Mortar shells</td>
-<td>Mortar Shell used to put out fires using firefoam</td>
+<td>Shell_Firefoam</td>
 </tr>
 <tr>
 <td>flakhelmet</td>
-<td align="right">442</td>
+<td>442</td>
 <td>Headgear</td>
-<td>Flak Helmet</td>
+<td>Apparel_AdvancedHelmet</td>
 </tr>
 <tr>
 <td>flakjacket</td>
-<td align="right">483</td>
+<td>483</td>
 <td>Armor</td>
-<td>Flak Jacket</td>
+<td>Apparel_FlakJacket</td>
 </tr>
 <tr>
 <td>flakpants</td>
-<td align="right">375</td>
+<td>375</td>
 <td>Armor</td>
-<td>Flak Pants</td>
+<td>Apparel_FlakPants</td>
 </tr>
 <tr>
 <td>flakvest</td>
-<td align="right">375</td>
+<td>375</td>
 <td>Armor</td>
-<td>Flak Vest</td>
+<td>Apparel_FlakVest</td>
 </tr>
 <tr>
 <td>flake</td>
-<td align="right">23</td>
+<td>23</td>
 <td>Drugs</td>
-<td>Smoked to give a huge mood boost, cheap to create, highly addictive</td>
+<td>Flake</td>
 </tr>
 <tr>
 <td>flatscreentelevision</td>
-<td align="right">1533</td>
+<td>1533</td>
 <td>Recreation</td>
-<td>Flatscreen Television</td>
+<td>FlatscreenTelevision</td>
+</tr>
+<tr>
+<td>foxmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_Fox_Fennec</td>
 </tr>
 <tr>
 <td>foxfur</td>
-<td align="right">6</td>
+<td>6</td>
 <td>Leathers</td>
-<td>Fox Fur</td>
+<td>Leather_Fox</td>
 </tr>
 <tr>
 <td>fraggrenades</td>
-<td align="right">442</td>
+<td>442</td>
 <td>Grenades</td>
-<td>Frag Grenade</td>
+<td>Weapon_GrenadeFrag</td>
 </tr>
 <tr>
 <td>fueledsmithy</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Production</td>
 <td>FueledSmithy</td>
 </tr>
 <tr>
 <td>fueledstove</td>
-<td align="right">265</td>
+<td>265</td>
 <td>Production</td>
 <td>FueledStove</td>
 </tr>
 <tr>
+<td>game-of-urboard</td>
+<td>153</td>
+<td>Furniture</td>
+<td>GameOfUrBoard</td>
+</tr>
+<tr>
 <td>gazelle</td>
-<td align="right">250</td>
+<td>250</td>
 <td>Animal</td>
 <td>Gazelle</td>
 </tr>
 <tr>
 <td>gazellemeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Gazelle</td>
 </tr>
 <tr>
 <td>gew43</td>
-<td align="right">633</td>
+<td>633</td>
 <td>Weapon</td>
-<td>Gewehr43 is a semi-auto German WW2 Era rifle</td>
+<td>Gun_Gew_43_RA</td>
 </tr>
 <tr>
 <td>gladius</td>
-<td align="right">239</td>
+<td>239</td>
 <td>Melee weapons</td>
 <td>MeleeWeapon_Gladius</td>
 </tr>
 <tr>
 <td>glitterworldmedicine</td>
-<td align="right">83</td>
+<td>83</td>
 <td>Medicine</td>
-<td>Highest quality medicine</td>
+<td>MedicineUltratech</td>
+</tr>
+<tr>
+<td>glowpod</td>
+<td>83</td>
+<td>Special</td>
+<td>GlowPod</td>
 </tr>
 <tr>
 <td>goat</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Goat</td>
 </tr>
 <tr>
 <td>goatmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Goat</td>
 </tr>
 <tr>
 <td>go-juice</td>
-<td align="right">88</td>
+<td>88</td>
 <td>Drugs</td>
-<td>Go-juice blocks pain and increases melee and shooting abilities. It also enhances movement speed.</td>
+<td>GoJuice</td>
 </tr>
 <tr>
 <td>gold</td>
-<td align="right">17</td>
+<td>17</td>
 <td>Raw resources</td>
 <td>Gold</td>
 </tr>
 <tr>
 <td>goose</td>
-<td align="right">150</td>
+<td>150</td>
 <td>Animal</td>
 <td>Goose</td>
 </tr>
 <tr>
-<td>gooseegg(fert.)</td>
-<td align="right">18</td>
-<td>Eggs (fert.)</td>
-<td>EggGooseFertilized</td>
-</tr>
-<tr>
 <td>grandsculpture</td>
-<td align="right">1967</td>
+<td>1967</td>
 <td>Art</td>
-<td>A huge sculpture</td>
+<td>SculptureGrand</td>
 </tr>
 <tr>
 <td>graniteblocks</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Stone blocks</td>
 <td>BlocksGranite</td>
 </tr>
 <tr>
 <td>greatbow</td>
-<td align="right">174</td>
+<td>174</td>
 <td>Ranged weapons</td>
 <td>Bow_Great</td>
 </tr>
 <tr>
 <td>grizzlybear</td>
-<td align="right">1167</td>
+<td>1167</td>
 <td>Animal</td>
 <td>Bear_Grizzly</td>
 </tr>
 <tr>
 <td>guineapig</td>
-<td align="right">250</td>
+<td>250</td>
 <td>Animal</td>
 <td>GuineaPig</td>
 </tr>
 <tr>
 <td>guineapigfur</td>
-<td align="right">8</td>
+<td>8</td>
 <td>Leathers</td>
 <td>Leather_GuineaPig</td>
 </tr>
 <tr>
 <td>guineapigmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_GuineaPig</td>
 </tr>
 <tr>
 <td>handtailorbench</td>
-<td align="right">262</td>
+<td>262</td>
 <td>Production</td>
 <td>HandTailoringBench</td>
 </tr>
 <tr>
 <td>hare</td>
-<td align="right">83</td>
+<td>150</td>
 <td>Animal</td>
 <td>Hare</td>
 </tr>
 <tr>
 <td>haremeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Hare</td>
 </tr>
 <tr>
 <td>hay</td>
-<td align="right">1</td>
+<td>1</td>
 <td>Foods</td>
 <td>Hay</td>
 </tr>
 <tr>
 <td>healermechserum</td>
-<td align="right">2167</td>
+<td>2167</td>
 <td>Items</td>
-<td>Instantly heals the (what it deems) worst ailment on the recipient. One use.</td>
+<td>MechSerumHealer</td>
+</tr>
+<tr>
+<td>heart</td>
+<td>833</td>
+<td>Natural</td>
+<td>Heart</td>
 </tr>
 <tr>
 <td>heater</td>
-<td align="right">218</td>
+<td>218</td>
 <td>Temperature</td>
 <td>Heater</td>
 </tr>
 <tr>
 <td>heavyfur</td>
-<td align="right">6</td>
+<td>6</td>
 <td>Leathers</td>
 <td>Leather_Heavy</td>
 </tr>
 <tr>
 <td>heavysmg</td>
-<td align="right">592</td>
+<td>592</td>
 <td>Ranged weapons</td>
-<td>Base game Heavy SMG</td>
+<td>Gun_HeavySMG</td>
 </tr>
 <tr>
 <td>herbalmedicine</td>
-<td align="right">17</td>
+<td>17</td>
 <td>Medicine</td>
-<td>Lowest tier Medicine</td>
+<td>MedicineHerbal</td>
 </tr>
 <tr>
 <td>high-explosiveshell</td>
-<td align="right">92</td>
+<td>92</td>
 <td>Mortar shells</td>
 <td>Shell_HighExplosive</td>
 </tr>
 <tr>
+<td>hoopstonering</td>
+<td>67</td>
+<td>Recreation</td>
+<td>HoopstoneRing</td>
+</tr>
+<tr>
 <td>hops</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Plant matter</td>
 <td>RawHops</td>
 </tr>
 <tr>
 <td>horse</td>
-<td align="right">917</td>
+<td>917</td>
 <td>Animal</td>
 <td>Horse</td>
 </tr>
 <tr>
 <td>horsemeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Horse</td>
 </tr>
 <tr>
+<td>horseshoespin</td>
+<td>34</td>
+<td>Recreation</td>
+<td>HorseshoesPin</td>
+</tr>
+<tr>
 <td>hospitalbed</td>
-<td align="right">667</td>
+<td>667</td>
 <td>Furniture</td>
 <td>HospitalBed</td>
 </tr>
 <tr>
 <td>humanleather</td>
-<td align="right">7</td>
+<td>7</td>
 <td>Leathers</td>
-<td>Human skin</td>
+<td>Leather_Human</td>
 </tr>
 <tr>
 <td>humanmeat</td>
-<td align="right">1</td>
+<td>1</td>
 <td>Meat</td>
-<td>Mmmm....</td>
+<td>Meat_Human</td>
 </tr>
 <tr>
 <td>husky</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Animal</td>
 <td>Husky</td>
 </tr>
 <tr>
 <td>huskymeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Husky</td>
 </tr>
 <tr>
 <td>hyperweave</td>
-<td align="right">15</td>
+<td>15</td>
 <td>Textiles</td>
 <td>Hyperweave</td>
 </tr>
 <tr>
 <td>ibex</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Animal</td>
 <td>Ibex</td>
 </tr>
 <tr>
 <td>ibexmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Ibex</td>
 </tr>
 <tr>
-<td>iedemptrap</td>
-<td align="right">192</td>
+<td>iedantigrainwarheadtrap</td>
+<td>2008</td>
 <td>Security</td>
-<td>EMP IED (Improvised Explosive Device)</td>
+<td>TrapIED_AntigrainWarhead</td>
+</tr>
+<tr>
+<td>iedemptrap</td>
+<td>192</td>
+<td>Security</td>
+<td>TrapIED_EMP</td>
+</tr>
+<tr>
+<td>iedfirefoamtrap</td>
+<td>192</td>
+<td>Security</td>
+<td>TrapIED_Firefoam</td>
 </tr>
 <tr>
 <td>iedincendiarytrap</td>
-<td align="right">192</td>
+<td>192</td>
 <td>Security</td>
-<td>Incendiary IED (Improvised Explosive Device)</td>
+<td>TrapIED_Incendiary</td>
 </tr>
 <tr>
 <td>iedtrap</td>
-<td align="right">192</td>
+<td>192</td>
 <td>Security</td>
-<td>Explosive (default) IED (Improvised Explosive Device)</td>
+<td>TrapIED_HighExplosive</td>
 </tr>
 <tr>
 <td>iguana</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>Iguana</td>
 </tr>
 <tr>
+<td>iguanameat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_Iguana</td>
+</tr>
+<tr>
+<td>ikwa</td>
+<td>197</td>
+<td>Melee weapons</td>
+<td>MeleeWeapon_Ikwa</td>
+</tr>
+<tr>
 <td>incendiarylauncher</td>
-<td align="right">567</td>
+<td>567</td>
 <td>Ranged weapons</td>
-<td>Gun that makes fires using bolts</td>
+<td>Gun_IncendiaryLauncher</td>
 </tr>
 <tr>
 <td>incendiaryshell</td>
-<td align="right">92</td>
+<td>92</td>
 <td>Mortar shells</td>
-<td>Incendiary mortar shell</td>
+<td>Shell_Incendiary</td>
 </tr>
 <tr>
 <td>infernocannon</td>
-<td align="right">2333</td>
+<td>2333</td>
 <td>Ranged weapons</td>
-<td>Large gun that when shot creates a massive fire</td>
+<td>Gun_InfernoCannon</td>
 </tr>
 <tr>
 <td>infinitechemreactor</td>
-<td align="right">5000</td>
+<td>5000</td>
 <td>Special</td>
 <td>InfiniteChemreactor</td>
 </tr>
 <tr>
 <td>insectjelly</td>
-<td align="right">13</td>
+<td>13</td>
 <td>Animal products</td>
 <td>InsectJelly</td>
 </tr>
 <tr>
 <td>insectmeat</td>
-<td align="right">1</td>
+<td>1</td>
 <td>Meat</td>
-<td>Cannot be eaten. Useful for fuel.</td>
+<td>Meat_Megaspider</td>
 </tr>
 <tr>
 <td>jacket</td>
-<td align="right">275</td>
+<td>275</td>
 <td>Apparel</td>
 <td>Apparel_Jacket</td>
 </tr>
 <tr>
 <td>jade</td>
-<td align="right">8</td>
+<td>8</td>
 <td>Raw resources</td>
 <td>Jade</td>
 </tr>
 <tr>
+<td>joywire</td>
+<td>1000</td>
+<td>Prosthetic</td>
+<td>Joywire</td>
+</tr>
+<tr>
 <td>kar98k</td>
-<td align="right">433</td>
+<td>450</td>
 <td>Weapon</td>
-<td>KAR98K is a bolt action rifle, German WW2 era</td>
+<td>Gun_Kar98K_RA</td>
 </tr>
 <tr>
 <td>kar98kwithschiessbecher</td>
-<td align="right">633</td>
+<td>650</td>
 <td>Weapon</td>
-<td>A KAR98K with a grenade launcher attached</td>
+<td>Gun_Kar98K_Schiessbecher_RA</td>
+</tr>
+<tr>
+<td>kar98kwithbayonet</td>
+<td>500</td>
+<td>Weapon</td>
+<td>Gun_Kar98K_Bayonet_RA</td>
 </tr>
 <tr>
 <td>kibble</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Foods</td>
-<td>Kibble, useful for feeding animals</td>
+<td>Kibble</td>
 </tr>
 <tr>
 <td>kidney</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Natural</td>
-<td>A human kidney. Not much use to Avali, but it&#39;s a kidney.</td>
+<td>Kidney</td>
 </tr>
 <tr>
 <td>knife</td>
-<td align="right">111</td>
+<td>111</td>
 <td>Melee weapons</td>
 <td>MeleeWeapon_Knife</td>
 </tr>
 <tr>
-<td>litemnameadorretriever</td>
-<td align="right">417</td>
+<td>lItemNameadorretriever</td>
+<td>417</td>
 <td>Animal</td>
-<td>Labrodor Retriever</td>
+<td>LItemNameadorRetriever</td>
+</tr>
+<tr>
+<td>lItemNameadorretrievermeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_LItemNameadorRetriever</td>
 </tr>
 <tr>
 <td>largesculpture</td>
-<td align="right">517</td>
+<td>517</td>
 <td>Art</td>
 <td>SculptureLarge</td>
 </tr>
 <tr>
 <td>lavishmeal</td>
-<td align="right">67</td>
+<td>67</td>
 <td>Meals</td>
-<td>The best meal for the colonists</td>
+<td>MealLavish</td>
 </tr>
 <tr>
 <td>lightleather</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Leathers</td>
 <td>Leather_Light</td>
 </tr>
 <tr>
 <td>limestoneblocks</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Stone blocks</td>
 <td>BlocksLimestone</td>
 </tr>
 <tr>
 <td>liver</td>
-<td align="right">833</td>
+<td>833</td>
 <td>Natural</td>
-<td>A human liver.</td>
+<td>Liver</td>
 </tr>
 <tr>
 <td>lizardskin</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Leathers</td>
 <td>Leather_Lizard</td>
 </tr>
 <tr>
+<td>lmg</td>
+<td>708</td>
+<td>Ranged weapons</td>
+<td>Gun_LMG</td>
+</tr>
+<tr>
 <td>longsword</td>
-<td align="right">442</td>
+<td>442</td>
 <td>Melee weapons</td>
 <td>MeleeWeapon_LongSword</td>
 </tr>
 <tr>
 <td>luciferium</td>
-<td align="right">117</td>
+<td>150</td>
 <td>Drugs</td>
-<td>Luciferium, a drug that improves all aspects of the user, but once taken, must continue to be taken, forever. Failure to take consistently once started will kill the user.</td>
+<td>Luciferium</td>
 </tr>
 <tr>
 <td>lung</td>
-<td align="right">667</td>
+<td>667</td>
 <td>Natural</td>
-<td>A human lung</td>
+<td>Lung</td>
 </tr>
 <tr>
 <td>lynx</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Animal</td>
 <td>Lynx</td>
 </tr>
 <tr>
 <td>lynxmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Lynx</td>
 </tr>
 <tr>
 <td>m24stielhandgranate</td>
-<td align="right">358</td>
+<td>358</td>
 <td>Weapon</td>
-<td>German WW2 era stick grenade</td>
-</tr>
-<tr>
-<td>m31feldspaten</td>
-<td align="right">113</td>
-<td>Weapon</td>
-<td>German WW2 era field shovel, melee weapon</td>
+<td>Weapon_M24_RA</td>
 </tr>
 <tr>
 <td>mace</td>
-<td align="right">203</td>
+<td>203</td>
 <td>Melee weapons</td>
 <td>MeleeWeapon_Mace</td>
 </tr>
 <tr>
+<td>machinepistol</td>
+<td>367</td>
+<td>Ranged weapons</td>
+<td>Gun_MachinePistol</td>
+</tr>
+<tr>
 <td>machiningtable</td>
-<td align="right">758</td>
+<td>758</td>
 <td>Production</td>
 <td>TableMachining</td>
 </tr>
 <tr>
 <td>marbleblocks</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Stone blocks</td>
 <td>BlocksMarble</td>
 </tr>
 <tr>
 <td>marinearmor</td>
-<td align="right">3392</td>
+<td>3392</td>
 <td>Armor</td>
 <td>Apparel_PowerArmor</td>
 </tr>
 <tr>
 <td>marinehelmet</td>
-<td align="right">1058</td>
+<td>1058</td>
 <td>Headgear</td>
 <td>Apparel_PowerArmorHelmet</td>
 </tr>
 <tr>
 <td>medicine</td>
-<td align="right">30</td>
+<td>30</td>
 <td>Medicine</td>
-<td>Standard grade medicine</td>
+<td>MedicineIndustrial</td>
 </tr>
 <tr>
 <td>megascarab</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>Megascarab</td>
 </tr>
 <tr>
 <td>megascreentelevision</td>
-<td align="right">2475</td>
+<td>2475</td>
 <td>Recreation</td>
 <td>MegascreenTelevision</td>
 </tr>
 <tr>
 <td>megasloth</td>
-<td align="right">1167</td>
+<td>1167</td>
 <td>Animal</td>
 <td>Megasloth</td>
 </tr>
 <tr>
 <td>megaslothmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
-<td>Megasloth meat... uh....</td>
+<td>Meat_Megasloth</td>
 </tr>
 <tr>
 <td>megaslothwool</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Textiles</td>
 <td>WoolMegasloth</td>
 </tr>
 <tr>
 <td>megaspider</td>
-<td align="right">833</td>
+<td>833</td>
 <td>Animal</td>
 <td>Megaspider</td>
 </tr>
 <tr>
 <td>mg34</td>
-<td align="right">983</td>
+<td>983</td>
 <td>Weapon</td>
-<td>MG34 is a German WW2 era Machine Gun</td>
+<td>Gun_MG_34_RA</td>
 </tr>
 <tr>
 <td>mg42</td>
-<td align="right">875</td>
+<td>875</td>
 <td>Weapon</td>
-<td>MG42 is a German WW2 era Machine Gun</td>
+<td>Gun_MG_42_RA</td>
 </tr>
 <tr>
 <td>milk</td>
-<td align="right">5</td>
+<td>5</td>
 <td>Animal products</td>
 <td>Milk</td>
 </tr>
 <tr>
 <td>minigun</td>
-<td align="right">1933</td>
+<td>1933</td>
 <td>Ranged weapons</td>
-<td>Base game minigun</td>
+<td>Gun_Minigun</td>
 </tr>
 <tr>
 <td>mini-turret</td>
-<td align="right">492</td>
+<td>492</td>
 <td>Security</td>
 <td>Turret_MiniTurret</td>
 </tr>
 <tr>
 <td>molotovcocktails</td>
-<td align="right">408</td>
+<td>408</td>
 <td>Grenades</td>
-<td>Molotov Cocktails create fire when thrown.</td>
+<td>Weapon_GrenadeMolotov</td>
 </tr>
 <tr>
 <td>monkey</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>Monkey</td>
 </tr>
 <tr>
 <td>monkeymeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Monkey</td>
 </tr>
 <tr>
 <td>mortar</td>
-<td align="right">1058</td>
+<td>1058</td>
 <td>Security</td>
-<td>Mortar emplacement</td>
+<td>Turret_Mortar</td>
 </tr>
 <tr>
 <td>mountedmg42</td>
-<td align="right">1083</td>
+<td>1083</td>
 <td>Security</td>
-<td>MG42 emplacement, German WW2 Era</td>
+<td>Turret_MG_42_RA</td>
 </tr>
 <tr>
 <td>mp3008</td>
-<td align="right">281</td>
+<td>281</td>
 <td>Weapon</td>
-<td>MP3008 is a German WW2 era SMG, very weak</td>
+<td>Gun_MP_3008_RA</td>
 </tr>
 <tr>
 <td>mp35</td>
-<td align="right">533</td>
+<td>533</td>
 <td>Weapon</td>
-<td>MP35 is an early German WW2 era SMG</td>
+<td>Gun_MP_35_RA</td>
 </tr>
 <tr>
 <td>mp40</td>
-<td align="right">517</td>
+<td>517</td>
 <td>Weapon</td>
-<td>MP40 is a German WW2 era SMG</td>
+<td>Gun_MP_40_RA</td>
 </tr>
 <tr>
 <td>mp507</td>
-<td align="right">358</td>
+<td>358</td>
 <td>Weapon</td>
-<td>MP507 is a late German WW2 era SMG, fairly weak</td>
+<td>Gun_MP_507_RA</td>
 </tr>
 <tr>
 <td>muffalo</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Animal</td>
 <td>Muffalo</td>
 </tr>
 <tr>
 <td>muffalomeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Muffalo</td>
 </tr>
 <tr>
 <td>muffalowool</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Textiles</td>
 <td>WoolMuffalo</td>
 </tr>
 <tr>
 <td>multi-analyzer</td>
-<td align="right">1700</td>
+<td>1700</td>
 <td>Misc</td>
-<td>MultiAnalyzer, allows for enhanced research</td>
+<td>MultiAnalyzer</td>
 </tr>
 <tr>
 <td>nano-carbonfiber</td>
-<td align="right">6</td>
+<td>6</td>
 <td>Avali resources</td>
-<td>NanoCarbonFiber is an advanced Avali resource</td>
+<td>AvaliNanoCarbonFiber</td>
 </tr>
 <tr>
 <td>nanofiber</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Avali resources</td>
-<td>NanoFiber is an Avali resource</td>
+<td>AvaliNanoFiber</td>
 </tr>
 <tr>
 <td>neutroamine</td>
-<td align="right">10</td>
+<td>10</td>
 <td>Manufactured</td>
-<td>Basic ingredient in medicine/drugs</td>
+<td>Neutroamine</td>
 </tr>
 <tr>
 <td>nutrientpastemeal</td>
-<td align="right">17</td>
+<td>17</td>
 <td>Meals</td>
-<td>Very bland, yet nutriotionally fufilling meal</td>
+<td>MealNutrientPaste</td>
 </tr>
 <tr>
 <td>orbitalbombardmenttargeter</td>
-<td align="right">2000</td>
+<td>2000</td>
 <td>Utility</td>
-<td>Targeter for Orbital Bombarbment, single use</td>
+<td>OrbitalTargeterBombardment</td>
 </tr>
 <tr>
 <td>orbitalpowerbeamtargeter</td>
-<td align="right">2000</td>
+<td>2000</td>
 <td>Utility</td>
-<td>Targeter for an Orbital Powerbeam, single use</td>
+<td>OrbitalTargeterPowerBeam</td>
 </tr>
 <tr>
 <td>orbitaltradebeacon</td>
-<td align="right">185</td>
+<td>185</td>
 <td>Misc</td>
-<td>Attracts orbital traders</td>
+<td>OrbitalTradeBeacon</td>
 </tr>
 <tr>
 <td>ostrich</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Animal</td>
 <td>Ostrich</td>
 </tr>
 <tr>
-<td>ostrichegg(fert.)</td>
-<td align="right">38</td>
-<td>Eggs (fert.)</td>
-<td>EggOstrichFertilized</td>
-</tr>
-<tr>
 <td>p08</td>
-<td align="right">425</td>
+<td>425</td>
 <td>Weapon</td>
-<td>P08 (Also known as Luger) was a German WW2 era pistol</td>
+<td>Gun_P08_RA</td>
 </tr>
 <tr>
 <td>p38</td>
-<td align="right">315</td>
+<td>315</td>
 <td>Weapon</td>
-<td>P38 was a German WW2 era pistol</td>
+<td>Gun_P38_RA</td>
 </tr>
 <tr>
 <td>packagedsurvivalmeal</td>
-<td align="right">40</td>
+<td>40</td>
 <td>Meals</td>
-<td>A meal that nearly never expires, contains decent quality food</td>
+<td>MealSurvivalPack</td>
+</tr>
+<tr>
+<td>painstopper</td>
+<td>367</td>
+<td>Prosthetic</td>
+<td>Painstopper</td>
 </tr>
 <tr>
 <td>panther</td>
-<td align="right">667</td>
+<td>667</td>
 <td>Animal</td>
 <td>Panther</td>
 </tr>
 <tr>
 <td>panthermeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Panther</td>
 </tr>
 <tr>
 <td>pantherafur</td>
-<td align="right">5</td>
+<td>5</td>
 <td>Leathers</td>
 <td>Leather_Panthera</td>
 </tr>
 <tr>
 <td>pants</td>
-<td align="right">143</td>
+<td>143</td>
 <td>Apparel</td>
 <td>Apparel_Pants</td>
 </tr>
 <tr>
 <td>panzerfaust60</td>
-<td align="right">367</td>
+<td>367</td>
 <td>Weapon</td>
-<td>The Panzerfaust 60 was a German WW2 single use anti-tank bazooka</td>
+<td>Gun_Panzerfaust_60_RA</td>
 </tr>
 <tr>
 <td>parka</td>
-<td align="right">315</td>
+<td>315</td>
 <td>Apparel</td>
 <td>Apparel_Parka</td>
 </tr>
 <tr>
 <td>patchleather</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Leathers</td>
 <td>Leather_Patch</td>
 </tr>
 <tr>
 <td>pemmican</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Foods</td>
-<td>Pemmican is produced using a basic preservation technique, allowing it to remain unexpired for long periods. It is just meat.</td>
+<td>Pemmican</td>
 </tr>
 <tr>
 <td>penoxycyline</td>
-<td align="right">30</td>
+<td>30</td>
 <td>Drugs</td>
-<td>Used to prevent diseases. Safe to use.</td>
+<td>Penoxycyline</td>
 </tr>
 <tr>
 <td>personacore</td>
-<td align="right">10000</td>
+<td>10000</td>
 <td>Items</td>
-<td>AI Persona Core, end game item.</td>
+<td>AIPersonaCore</td>
 </tr>
 <tr>
 <td>pig</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Pig</td>
 </tr>
 <tr>
 <td>pigskin</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Leathers</td>
 <td>Leather_Pig</td>
 </tr>
 <tr>
 <td>pila</td>
-<td align="right">182</td>
+<td>182</td>
 <td>Ranged weapons</td>
 <td>Pila</td>
 </tr>
 <tr>
 <td>plainleather</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Leathers</td>
 <td>Leather_Plain</td>
 </tr>
 <tr>
 <td>plantpot</td>
-<td align="right">68</td>
+<td>68</td>
 <td>Furniture</td>
 <td>PlantPot</td>
 </tr>
 <tr>
 <td>plasteel</td>
-<td align="right">15</td>
+<td>15</td>
 <td>Raw resources</td>
-<td>Plasteel, advanced material</td>
-</tr>
-<tr>
-<td>platearmor</td>
-<td align="right">792</td>
-<td>Armor</td>
-<td>Apparel_PlateArmor</td>
+<td>Plasteel</td>
 </tr>
 <tr>
 <td>pokertable</td>
-<td align="right">400</td>
+<td>400</td>
 <td>Furniture</td>
 <td>PokerTable</td>
 </tr>
 <tr>
 <td>polarbear</td>
-<td align="right">1167</td>
+<td>1167</td>
 <td>Animal</td>
 <td>Bear_Polar</td>
 </tr>
 <tr>
 <td>pork</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Pig</td>
 </tr>
 <tr>
 <td>positiveenforcementaugment</td>
-<td align="right">533</td>
+<td>533</td>
 <td>Bionic</td>
-<td>Makes avali more friendly to others, however may cause forgetfulness</td>
+<td>PositiveE</td>
 </tr>
 <tr>
 <td>potatoes</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Vegetarian</td>
 <td>RawPotatoes</td>
 </tr>
 <tr>
 <td>powerclaw</td>
-<td align="right">642</td>
+<td>642</td>
 <td>Prosthetic</td>
 <td>PowerClaw</td>
 </tr>
 <tr>
+<td>ppk</td>
+<td>400</td>
+<td>Weapon</td>
+<td>Gun_PPK_RA</td>
+</tr>
+<tr>
 <td>prostheticarm</td>
-<td align="right">433</td>
+<td>433</td>
 <td>Prosthetic</td>
 <td>SimpleProstheticArm</td>
 </tr>
 <tr>
 <td>prostheticheart</td>
-<td align="right">383</td>
+<td>383</td>
 <td>Prosthetic</td>
 <td>SimpleProstheticHeart</td>
 </tr>
 <tr>
 <td>prostheticleg</td>
-<td align="right">433</td>
+<td>433</td>
 <td>Prosthetic</td>
 <td>SimpleProstheticLeg</td>
 </tr>
 <tr>
 <td>psychicanimalpulser</td>
-<td align="right">1167</td>
+<td>1167</td>
 <td>Artifacts</td>
-<td>Sends all animals on the map into a rage, single use. Does not affect pets.</td>
+<td>PsychicAnimalPulser</td>
 </tr>
 <tr>
 <td>psychicemanator</td>
-<td align="right">2167</td>
+<td>2167</td>
 <td>Special</td>
-<td>Creates psychic waves that soothe colonists. Passive effect.</td>
+<td>PsychicEmanator</td>
 </tr>
 <tr>
 <td>psychicfoilhelmet</td>
-<td align="right">417</td>
+<td>417</td>
 <td>Headgear</td>
-<td>A helmet to protect against psychic waves. Sadly isn&#39;t made of tinfoil.</td>
+<td>Apparel_PsychicFoilHelmet</td>
 </tr>
 <tr>
 <td>psychicinsanitylance</td>
-<td align="right">1083</td>
+<td>1083</td>
 <td>Utility</td>
-<td>Whoever is hit by the lance will become insane. Limited use.</td>
+<td>Apparel_PsychicInsanityLance</td>
 </tr>
 <tr>
 <td>psychicshocklance</td>
-<td align="right">917</td>
+<td>917</td>
 <td>Utility</td>
-<td>Whoever is hit by the lance will go into a state of shock. Limited use.</td>
+<td>Apparel_PsychicShockLance</td>
 </tr>
 <tr>
 <td>psychicsoothepulser</td>
-<td align="right">1000</td>
+<td>1000</td>
 <td>Artifacts</td>
-<td>One use, makes everyone happier temporarily.</td>
+<td>PsychicSoothePulser</td>
 </tr>
 <tr>
 <td>psychitetea</td>
-<td align="right">17</td>
+<td>17</td>
 <td>Drugs</td>
-<td>Slight boost to mood and gives energy. Can be addictive.</td>
+<td>PsychiteTea</td>
 </tr>
 <tr>
 <td>psychoidleaves</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Plant matter</td>
 <td>PsychoidLeaves</td>
 </tr>
 <tr>
 <td>pumpshotgun</td>
-<td align="right">425</td>
+<td>425</td>
 <td>Ranged weapons</td>
 <td>Gun_PumpShotgun</td>
 </tr>
 <tr>
-<td>pzb39</td>
-<td align="right">808</td>
-<td>Weapon</td>
-<td>PZB39 is a German WW2 era Anti-Tank rifle</td>
-</tr>
-<tr>
 <td>raccoon</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>Raccoon</td>
 </tr>
 <tr>
 <td>raccoonmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Raccoon</td>
 </tr>
 <tr>
 <td>rat</td>
-<td align="right">58</td>
+<td>150</td>
 <td>Animal</td>
 <td>Rat</td>
 </tr>
 <tr>
 <td>ratmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Rat</td>
 </tr>
 <tr>
 <td>rawfungus</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Vegetarian</td>
 <td>RawFungus</td>
 </tr>
 <tr>
 <td>rawtungsten</td>
-<td align="right">17</td>
+<td>17</td>
 <td>Avali resources</td>
 <td>AvaliTungsten</td>
 </tr>
 <tr>
 <td>reconarmor</td>
-<td align="right">2567</td>
+<td>2567</td>
 <td>Armor</td>
 <td>Apparel_ArmorRecon</td>
 </tr>
 <tr>
 <td>reconhelmet</td>
-<td align="right">875</td>
+<td>875</td>
 <td>Headgear</td>
 <td>Apparel_ArmorHelmetRecon</td>
 </tr>
 <tr>
 <td>recurvebow</td>
-<td align="right">110</td>
+<td>110</td>
 <td>Ranged weapons</td>
 <td>Bow_Recurve</td>
 </tr>
 <tr>
 <td>redfox</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Fox_Red</td>
 </tr>
 <tr>
 <td>refinedcarbon</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Avali resources</td>
-<td>NanoCarbon is an Avali resource</td>
+<td>AvaliNanoCarbon</td>
 </tr>
 <tr>
 <td>reichmachiningtable</td>
-<td align="right">608</td>
+<td>608</td>
 <td>Production</td>
-<td>Used to make WW2 German weaponry.</td>
+<td>TableRA</td>
 </tr>
 <tr>
 <td>resurrectormechserum</td>
-<td align="right">40000</td>
+<td>40000</td>
 <td>Items</td>
-<td>A one use, resurrection serum. However, it is not perfect, the resurrected indivual may have complications.</td>
+<td>MechSerumResurrector</td>
 </tr>
 <tr>
 <td>revolver</td>
-<td align="right">226</td>
+<td>226</td>
 <td>Ranged weapons</td>
 <td>Gun_Revolver</td>
 </tr>
 <tr>
 <td>rhinoceros</td>
-<td align="right">1167</td>
+<td>1167</td>
 <td>Animal</td>
 <td>Rhinoceros</td>
 </tr>
 <tr>
 <td>rhinocerosleather</td>
-<td align="right">7</td>
+<td>7</td>
 <td>Leathers</td>
 <td>Leather_Rhinoceros</td>
 </tr>
 <tr>
 <td>rhinocerosmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Rhinoceros</td>
 </tr>
 <tr>
 <td>rice</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Vegetarian</td>
 <td>RawRice</td>
 </tr>
 <tr>
 <td>royalbed</td>
-<td align="right">1467</td>
+<td>1467</td>
 <td>Furniture</td>
 <td>RoyalBed</td>
 </tr>
 <tr>
 <td>s84/98iiibayonet</td>
-<td align="right">82</td>
+<td>82</td>
 <td>Weapon</td>
-<td>The s84/98 is a German WW2 era bayonet, (it&#39;s just a knife here)</td>
+<td>MeleeWeapon_S84_98_III_RA</td>
 </tr>
 <tr>
 <td>sandstoneblocks</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Stone blocks</td>
 <td>BlocksSandstone</td>
 </tr>
 <tr>
 <td>sheep</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Animal</td>
 <td>Sheep</td>
 </tr>
 <tr>
 <td>sheepmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Sheep</td>
 </tr>
 <tr>
 <td>sheepwool</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Textiles</td>
 <td>WoolSheep</td>
 </tr>
 <tr>
 <td>shelf</td>
-<td align="right">104</td>
+<td>104</td>
 <td>Furniture</td>
 <td>Shelf</td>
 </tr>
 <tr>
-<td>shieldbelt</td>
-<td align="right">650</td>
-<td>Utility</td>
-<td>Apparel_ShieldBelt</td>
-</tr>
-<tr>
 <td>shortbow</td>
-<td align="right">74</td>
+<td>74</td>
 <td>Ranged weapons</td>
 <td>Bow_Short</td>
 </tr>
 <tr>
 <td>silver</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Raw resources</td>
 <td>Silver</td>
 </tr>
 <tr>
 <td>simplehelmet</td>
-<td align="right">153</td>
+<td>153</td>
 <td>Headgear</td>
 <td>Apparel_SimpleHelmet</td>
 </tr>
 <tr>
 <td>simplemeal</td>
-<td align="right">25</td>
+<td>25</td>
 <td>Meals</td>
-<td>A basic meal for the colonists.</td>
+<td>MealSimple</td>
 </tr>
 <tr>
 <td>simpleresearchbench</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Production</td>
 <td>SimpleResearchBench</td>
 </tr>
 <tr>
 <td>skilltrainer(animals)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Animals</td>
 </tr>
 <tr>
 <td>skilltrainer(artistic)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Artistic</td>
 </tr>
 <tr>
 <td>skilltrainer(construction)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Construction</td>
 </tr>
 <tr>
 <td>skilltrainer(cooking)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Cooking</td>
 </tr>
 <tr>
 <td>skilltrainer(crafting)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Crafting</td>
 </tr>
 <tr>
 <td>skilltrainer(intellectual)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Intellectual</td>
 </tr>
 <tr>
 <td>skilltrainer(medical)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Medicine</td>
 </tr>
 <tr>
 <td>skilltrainer(melee)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Melee</td>
 </tr>
 <tr>
 <td>skilltrainer(mining)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Mining</td>
 </tr>
 <tr>
 <td>skilltrainer(plants)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Plants</td>
 </tr>
 <tr>
 <td>skilltrainer(shooting)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Shooting</td>
 </tr>
 <tr>
 <td>skilltrainer(social)</td>
-<td align="right">1250</td>
+<td>1250</td>
 <td>Skilltrainers</td>
 <td>Neurotrainer_Social</td>
 </tr>
 <tr>
 <td>slateblocks</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Stone blocks</td>
 <td>BlocksSlate</td>
 </tr>
 <tr>
 <td>smallsculpture</td>
-<td align="right">275</td>
+<td>275</td>
 <td>Art</td>
 <td>SculptureSmall</td>
 </tr>
 <tr>
 <td>smokelauncher</td>
-<td align="right">633</td>
+<td>633</td>
 <td>Ranged weapons</td>
 <td>Gun_SmokeLauncher</td>
 </tr>
 <tr>
 <td>smokeshell</td>
-<td align="right">92</td>
+<td>92</td>
 <td>Mortar shells</td>
 <td>Shell_Smoke</td>
 </tr>
 <tr>
 <td>smokeleafjoint</td>
-<td align="right">18</td>
+<td>18</td>
 <td>Drugs</td>
-<td>Smokeleaf improves mood, but also increases appetite, reduces focus and slows movement. Can be addictive.</td>
+<td>SmokeleafJoint</td>
 </tr>
 <tr>
 <td>smokeleafleaves</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Plant matter</td>
 <td>SmokeleafLeaves</td>
 </tr>
 <tr>
 <td>smokepoppack</td>
-<td align="right">277</td>
+<td>277</td>
 <td>Utility</td>
 <td>Apparel_SmokepopBelt</td>
 </tr>
 <tr>
 <td>sniperrifle</td>
-<td align="right">883</td>
+<td>883</td>
 <td>Ranged weapons</td>
-<td>Base game Sniper Rifle</td>
+<td>Gun_SniperRifle</td>
 </tr>
 <tr>
 <td>snowhare</td>
-<td align="right">83</td>
+<td>150</td>
 <td>Animal</td>
 <td>Snowhare</td>
 </tr>
 <tr>
 <td>socialcapabilityenhancer</td>
-<td align="right">533</td>
+<td>533</td>
 <td>Bionic</td>
 <td>SocialEnhancer</td>
 </tr>
 <tr>
 <td>spear</td>
-<td align="right">322</td>
+<td>322</td>
 <td>Melee weapons</td>
 <td>MeleeWeapon_Spear</td>
 </tr>
 <tr>
 <td>spelopede</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Spelopede</td>
 </tr>
 <tr>
 <td>spiketrap</td>
-<td align="right">169</td>
+<td>169</td>
 <td>Security</td>
 <td>TrapSpike</td>
 </tr>
 <tr>
 <td>squirrel</td>
-<td align="right">58</td>
+<td>150</td>
 <td>Animal</td>
 <td>Squirrel</td>
 </tr>
 <tr>
 <td>squirrelmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Squirrel</td>
 </tr>
 <tr>
 <td>standinglamp</td>
-<td align="right">65</td>
+<td>65</td>
 <td>Furniture</td>
 <td>StandingLamp</td>
 </tr>
 <tr>
 <td>standinglamp(blue)</td>
-<td align="right">65</td>
+<td>65</td>
 <td>Furniture</td>
 <td>StandingLamp_Blue</td>
 </tr>
 <tr>
 <td>standinglamp(green)</td>
-<td align="right">65</td>
+<td>65</td>
 <td>Furniture</td>
 <td>StandingLamp_Green</td>
 </tr>
 <tr>
 <td>standinglamp(red)</td>
-<td align="right">65</td>
+<td>65</td>
 <td>Furniture</td>
 <td>StandingLamp_Red</td>
 </tr>
 <tr>
 <td>steel</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Raw resources</td>
 <td>Steel</td>
 </tr>
 <tr>
 <td>stg44</td>
-<td align="right">683</td>
+<td>683</td>
 <td>Weapon</td>
-<td>The STG44 is a WW2 Era German Assault rifle</td>
+<td>Gun_StG_44_RA</td>
 </tr>
 <tr>
 <td>stonecutter&#39;stable</td>
-<td align="right">358</td>
+<td>358</td>
 <td>Production</td>
 <td>TableStonecutter</td>
 </tr>
 <tr>
 <td>stool</td>
-<td align="right">86</td>
+<td>86</td>
 <td>Furniture</td>
 <td>Stool</td>
 </tr>
 <tr>
 <td>sunlamp</td>
-<td align="right">129</td>
+<td>129</td>
 <td>Furniture</td>
 <td>SunLamp</td>
 </tr>
 <tr>
 <td>synthread</td>
-<td align="right">7</td>
+<td>7</td>
 <td>Textiles</td>
 <td>Synthread</td>
 </tr>
 <tr>
 <td>table(1x2)</td>
-<td align="right">98</td>
+<td>98</td>
 <td>Furniture</td>
 <td>Table1x2c</td>
 </tr>
 <tr>
 <td>table(2x2)</td>
-<td align="right">176</td>
+<td>176</td>
 <td>Furniture</td>
 <td>Table2x2c</td>
 </tr>
 <tr>
 <td>table(2x4)</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Furniture</td>
 <td>Table2x4c</td>
 </tr>
 <tr>
 <td>table(3x3)</td>
-<td align="right">350</td>
+<td>350</td>
 <td>Furniture</td>
 <td>Table3x3c</td>
 </tr>
 <tr>
 <td>tailstiffeningaugment</td>
-<td align="right">383</td>
+<td>383</td>
 <td>Bionic</td>
-<td>Allows Avali tails to be used as a weapon, plus be able to take more damage, but restricts movement.</td>
+<td>TailStiffeningAugment</td>
 </tr>
 <tr>
 <td>techprofsubpersonacore</td>
-<td align="right">1667</td>
+<td>1500</td>
 <td>Items</td>
-<td>One-use, will instantly research whatever you tell it to.</td>
+<td>TechprofSubpersonaCore</td>
 </tr>
 <tr>
 <td>telescope</td>
-<td align="right">583</td>
+<td>583</td>
 <td>Recreation</td>
 <td>Telescope</td>
 </tr>
 <tr>
 <td>thrumbo</td>
-<td align="right">6667</td>
+<td>6667</td>
 <td>Animal</td>
 <td>Thrumbo</td>
 </tr>
 <tr>
 <td>thrumbohorn</td>
-<td align="right">1333</td>
+<td>1333</td>
 <td>Items</td>
 <td>ThrumboHorn</td>
 </tr>
 <tr>
 <td>thrumbomeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Thrumbo</td>
 </tr>
 <tr>
 <td>thrumbofur</td>
-<td align="right">23</td>
+<td>23</td>
 <td>Leathers</td>
 <td>Leather_Thrumbo</td>
 </tr>
 <tr>
 <td>timberwolf</td>
-<td align="right">583</td>
+<td>583</td>
 <td>Animal</td>
 <td>Wolf_Timber</td>
 </tr>
 <tr>
 <td>toolcabinet</td>
-<td align="right">642</td>
+<td>642</td>
 <td>Misc</td>
 <td>ToolCabinet</td>
 </tr>
 <tr>
 <td>tornadogenerator</td>
-<td align="right">1333</td>
+<td>1333</td>
 <td>Utility</td>
-<td>One use, targeted tornado generator.</td>
+<td>TornadoGenerator</td>
 </tr>
 <tr>
 <td>tortoise</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>Tortoise</td>
 </tr>
 <tr>
 <td>tortoisemeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Tortoise</td>
 </tr>
 <tr>
 <td>tribalheaddress</td>
-<td align="right">203</td>
+<td>203</td>
 <td>Headgear</td>
 <td>Apparel_TribalHeaddress</td>
 </tr>
 <tr>
 <td>tribalwear</td>
-<td align="right">211</td>
+<td>211</td>
 <td>Apparel</td>
 <td>Apparel_TribalA</td>
 </tr>
 <tr>
 <td>triplerocketlauncher</td>
-<td align="right">1667</td>
+<td>1667</td>
 <td>Ranged weapons</td>
 <td>Gun_TripleRocket</td>
 </tr>
 <tr>
 <td>t-shirt</td>
-<td align="right">143</td>
+<td>143</td>
 <td>Apparel</td>
 <td>Apparel_BasicShirt</td>
 </tr>
 <tr>
 <td>tubetelevision</td>
-<td align="right">525</td>
+<td>525</td>
 <td>Recreation</td>
 <td>TubeTelevision</td>
 </tr>
 <tr>
 <td>tungsten</td>
-<td align="right">20</td>
+<td>20</td>
 <td>Avali resources</td>
 <td>AvaliTungstenPowder</td>
 </tr>
 <tr>
-<td>tuque</td>
-<td align="right">74</td>
-<td>Headgear</td>
-<td>Apparel_Tuque</td>
-</tr>
-<tr>
 <td>turkey</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>Turkey</td>
 </tr>
 <tr>
-<td>turkeyegg(fert.)</td>
-<td align="right">18</td>
-<td>Eggs (fert.)</td>
-<td>EggTurkeyFertilized</td>
-</tr>
-<tr>
 <td>turkeymeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Turkey</td>
 </tr>
 <tr>
 <td>uranium</td>
-<td align="right">10</td>
+<td>10</td>
 <td>Raw resources</td>
 <td>Uranium</td>
 </tr>
 <tr>
 <td>urn</td>
-<td align="right">70</td>
+<td>70</td>
 <td>Furniture</td>
 <td>Urn</td>
 </tr>
 <tr>
 <td>vanometricpowercell</td>
-<td align="right">3500</td>
+<td>3500</td>
 <td>Special</td>
-<td>Generates electricity, forever, without consuming any resources.</td>
+<td>VanometricPowerCell</td>
 </tr>
 <tr>
 <td>venison</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Deer</td>
 </tr>
 <tr>
 <td>vitalsmonitor</td>
-<td align="right">358</td>
+<td>358</td>
 <td>Misc</td>
 <td>VitalsMonitor</td>
 </tr>
 <tr>
 <td>volkspistole</td>
-<td align="right">222</td>
+<td>222</td>
 <td>Weapon</td>
-<td>A very weak WW2 era German pistol</td>
+<td>Gun_Volkspistole_RA</td>
 </tr>
 <tr>
 <td>wake-up</td>
-<td align="right">58</td>
+<td>58</td>
 <td>Drugs</td>
-<td>An addictive stimulant. Fills the need for rest, and allows users to work for extended periods without getting tired.</td>
+<td>WakeUp</td>
 </tr>
 <tr>
 <td>warmask</td>
-<td align="right">101</td>
+<td>100</td>
 <td>Headgear</td>
 <td>Apparel_WarMask</td>
 </tr>
 <tr>
 <td>warveil</td>
-<td align="right">75</td>
+<td>75</td>
 <td>Headgear</td>
 <td>Apparel_WarVeil</td>
 </tr>
 <tr>
 <td>warg</td>
-<td align="right">750</td>
+<td>750</td>
 <td>Animal</td>
 <td>Warg</td>
 </tr>
 <tr>
 <td>wargmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Warg</td>
 </tr>
 <tr>
 <td>wildboar</td>
-<td align="right">333</td>
+<td>333</td>
 <td>Animal</td>
 <td>WildBoar</td>
 </tr>
 <tr>
 <td>wolfmeat</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Wolf_Timber</td>
 </tr>
 <tr>
 <td>wolfskin</td>
-<td align="right">5</td>
+<td>5</td>
 <td>Leathers</td>
 <td>Leather_Wolf</td>
 </tr>
 <tr>
 <td>wood</td>
-<td align="right">2</td>
+<td>2</td>
 <td>Raw resources</td>
 <td>WoodLog</td>
 </tr>
 <tr>
 <td>wort</td>
-<td align="right">4</td>
+<td>4</td>
 <td>Manufactured</td>
 <td>Wort</td>
 </tr>
 <tr>
 <td>yak</td>
-<td align="right">533</td>
+<td>533</td>
 <td>Animal</td>
 <td>Yak</td>
 </tr>
 <tr>
 <td>yakbeef</td>
-<td align="right">3</td>
+<td>3</td>
 <td>Meat</td>
 <td>Meat_Yak</td>
 </tr>
 <tr>
 <td>yayo</td>
-<td align="right">35</td>
+<td>35</td>
 <td>Drugs</td>
-<td>A fine white powder snorted to produce a euphoric high. Yayo reduces the user&#39;s need for rest, and suppresses pain. It is, however, addictive.</td>
+<td>Yayo</td>
 </tr>
 <tr>
 <td>yorkshireterrier</td>
-<td align="right">167</td>
+<td>167</td>
 <td>Animal</td>
 <td>YorkshireTerrier</td>
 </tr>
 <tr>
+<td>yorkshireterriermeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_YorkshireTerrier</td>
+</tr>
+<tr>
 <td>ak-12</td>
-<td align="right">625</td>
+<td>625</td>
 <td>Ranged weapons</td>
-<td>The AK-12 is a modern Soviet assault rifle</td>
+<td>Gun_AK-12_SA</td>
 </tr>
 <tr>
 <td>ak-74</td>
-<td align="right">425</td>
+<td>425</td>
 <td>Ranged weapons</td>
-<td>The AK-74 is an average Soviet assault rifle</td>
+<td>Gun_AK-74_SA</td>
 </tr>
 <tr>
 <td>akm</td>
-<td align="right">375</td>
+<td>375</td>
 <td>Ranged weapons</td>
-<td>The AKM is an early Soviet assault rifle</td>
+<td>Gun_AKM_SA</td>
 </tr>
 <tr>
 <td>aks-74u</td>
-<td align="right">458</td>
+<td>458</td>
 <td>Ranged weapons</td>
-<td>The AKS-74u is an average Soviet smg(i dunno its a short version of the ak-74</td>
+<td>Gun_AKS-74U_SA</td>
 </tr>
 <tr>
 <td>makarov</td>
-<td align="right">281</td>
+<td>281</td>
 <td>Ranged weapons</td>
-<td>The Makarov is a low end Soviet pistol</td>
+<td>Gun_Makarov_SA</td>
 </tr>
 <tr>
 <td>mountedags-17plamya</td>
-<td align="right">1033</td>
+<td>1033</td>
 <td>Security</td>
-<td>The 17plamya is a Soviet grenade launcher emplacement</td>
+<td>Turret_AGS</td>
 </tr>
 <tr>
 <td>mountednsvutyos</td>
-<td align="right">708</td>
+<td>708</td>
 <td>Security</td>
-<td>The NSV Utyos is a Soviet MG emplacement</td>
+<td>Turret_NSV</td>
 </tr>
 <tr>
 <td>mr-444</td>
-<td align="right">375</td>
+<td>375</td>
 <td>Ranged weapons</td>
-<td>The MR-444 is a decent Soviet pistol</td>
+<td>Gun_MR-444_SA</td>
 </tr>
 <tr>
 <td>ots-14groza-1</td>
-<td align="right">550</td>
+<td>550</td>
 <td>Ranged weapons</td>
-<td>The OTS-14 Groza-1 is a modern Soviet bullpup smg</td>
+<td>Gun_OTs-14_1_SA</td>
 </tr>
 <tr>
 <td>pkm</td>
-<td align="right">625</td>
+<td>625</td>
 <td>Ranged weapons</td>
-<td>The PKM is a Soviet LMG</td>
+<td>Gun_PKM_SA</td>
 </tr>
 <tr>
 <td>pp-19bizon</td>
-<td align="right">467</td>
+<td>467</td>
 <td>Ranged weapons</td>
-<td>The PP-19 Bizon is a Soviet SMG</td>
+<td>Gun_PP-19_SA</td>
 </tr>
 <tr>
 <td>rgs-50</td>
-<td align="right">500</td>
+<td>500</td>
 <td>Ranged weapons</td>
-<td>The RGS-50 is a Soviet Grenade launcher</td>
+<td>Gun_RGS-50_SA</td>
 </tr>
 <tr>
 <td>rpg-7</td>
-<td align="right">958</td>
+<td>958</td>
 <td>Ranged weapons</td>
-<td>It&#39;s an rpg, what else do I need to say?</td>
+<td>Gun_RPG_7_SA</td>
 </tr>
 <tr>
 <td>rpk</td>
-<td align="right">467</td>
+<td>467</td>
 <td>Ranged weapons</td>
-<td>The RPK is an early Soviet LMG</td>
+<td>Gun_RPK_SA</td>
 </tr>
 <tr>
 <td>rpo-zshmel</td>
-<td align="right">742</td>
+<td>742</td>
 <td>Ranged weapons</td>
-<td>The RPO-Zshmel is a single use Soviet rocket launcher.</td>
+<td>Gun_RPO-Z_SA</td>
 </tr>
 <tr>
 <td>saiga-12k</td>
-<td align="right">600</td>
+<td>600</td>
 <td>Ranged weapons</td>
-<td>The Saiga-12 is a Soviet automatic shotgun</td>
+<td>Gun_Saiga-12K_SA</td>
 </tr>
 <tr>
 <td>sks-45</td>
-<td align="right">575</td>
+<td>575</td>
 <td>Ranged weapons</td>
-<td>The SKS-45 is a Soviet semi-auto rifle.</td>
+<td>Gun_SKS-45_SA</td>
 </tr>
 <tr>
 <td>sovietweapontable</td>
-<td align="right">608</td>
+<td>608</td>
 <td>Production</td>
-<td>Used to produce Soviet weaponry</td>
+<td>TableSA</td>
 </tr>
 <tr>
 <td>svddragunov</td>
-<td align="right">767</td>
+<td>767</td>
 <td>Ranged weapons</td>
-<td>The SVD Dragunov is a Soviet sniper rifle</td>
+<td>Gun_SVD_SA</td>
+</tr>
+<tr>
+<td>tp-82</td>
+<td>475</td>
+<td>Ranged weapons</td>
+<td>Gun_TP-82_SA</td>
+</tr>
+<tr>
+<td>vssvintorez</td>
+<td>692</td>
+<td>Ranged weapons</td>
+<td>Gun_VSS_SA</td>
+</tr>
+<tr>
+<td>basicmanagerdesk</td>
+<td>262</td>
+<td>Production</td>
+<td>FM_BasicManagerStation</td>
+</tr>
+<tr>
+<td>managerdesk</td>
+<td>508</td>
+<td>Production</td>
+<td>FM_ManagerStation</td>
+</tr>
+<tr>
+<td>10,5cmheshell</td>
+<td>167</td>
+<td>10,5cm leFH 16 ammo</td>
+<td>Shell_105cm_HE_KA</td>
+</tr>
+<tr>
+<td>10,5cmlefh16</td>
+<td>3217</td>
+<td>Security</td>
+<td>Turret_leFH_16_KA</td>
+</tr>
+<tr>
+<td>abyssiniancat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatAbyssinian</td>
+</tr>
+<tr>
+<td>advancedbattery</td>
+<td>750</td>
+<td>Power</td>
+<td>VFE_AdvancedBattery</td>
+</tr>
+<tr>
+<td>alligator</td>
+<td>1250</td>
+<td>Animal</td>
+<td>AEXP_Alligator</td>
+</tr>
+<tr>
+<td>alligatormeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Alligator</td>
+</tr>
+<tr>
+<td>anaconda</td>
+<td>1292</td>
+<td>Animal</td>
+<td>AEXP_Anaconda</td>
+</tr>
+<tr>
+<td>antenna</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_Antenna</td>
+</tr>
+<tr>
+<td>apiary</td>
+<td>318</td>
+<td>Misc</td>
+<td>VFEV_Apiary</td>
+</tr>
+<tr>
+<td>apples</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawApple</td>
+</tr>
+<tr>
+<td>arcademachine</td>
+<td>650</td>
+<td>Recreation</td>
+<td>Joy_Arcade</td>
+</tr>
+<tr>
+<td>archotecheraser</td>
+<td>3333</td>
+<td>Artifacts</td>
+<td>VFEI_Artifacts_ArchotechEraser</td>
+</tr>
+<tr>
+<td>archotechshieldbelt</td>
+<td>2183</td>
+<td>Artifacts</td>
+<td>VFEI_Apparel_ArchotechShieldBelt</td>
+</tr>
+<tr>
+<td>archotechshieldgenerator</td>
+<td>4667</td>
+<td>Special</td>
+<td>VFES_ShieldGenerator_Archotech</td>
+</tr>
+<tr>
+<td>archotechteleporter</td>
+<td>1333</td>
+<td>Artifacts</td>
+<td>VFEI_Artifacts_ArchotechTeleporter</td>
+</tr>
+<tr>
+<td>archotechviolencegenerator</td>
+<td>5667</td>
+<td>Special</td>
+<td>VPE_ArchotechViolenceGenerator</td>
+</tr>
+<tr>
+<td>arcticcoyote</td>
+<td>250</td>
+<td>Animal</td>
+<td>AEXP_ArcticCoyote</td>
+</tr>
+<tr>
+<td>arcticcoyotemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_ArcticCoyote</td>
+</tr>
+<tr>
+<td>artillery</td>
+<td>1408</td>
+<td>Security</td>
+<td>VFES_Turret_Artillery</td>
+</tr>
+<tr>
+<td>bakerrifle</td>
+<td>1167</td>
+<td>Ranged weapons</td>
+<td>BakerRifle</td>
+</tr>
+<tr>
+<td>bananas</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawBanana</td>
+</tr>
+<tr>
+<td>beagle</td>
+<td>167</td>
+<td>Animal</td>
+<td>AEXP_Beagle</td>
+</tr>
+<tr>
+<td>beartrap</td>
+<td>236</td>
+<td>Security</td>
+<td>VFES_BearTrap</td>
+</tr>
+<tr>
+<td>bearberries</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_Bearberry</td>
+</tr>
+<tr>
+<td>beardedaxe</td>
+<td>228</td>
+<td>Melee weapons</td>
+<td>VFE_MeleeWeapon_BeardedAxe</td>
+</tr>
+<tr>
+<td>beets</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawBeets</td>
+</tr>
+<tr>
+<td>bench</td>
+<td>86</td>
+<td>Furniture</td>
+<td>Seat_Bench</td>
+</tr>
+<tr>
+<td>bengalcat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatBengal</td>
+</tr>
+<tr>
+<td>bio-engineeringincubator</td>
+<td>1067</td>
+<td>Furniture</td>
+<td>VFEI_BioengineeringIncubator</td>
+</tr>
+<tr>
+<td>blackbear</td>
+<td>1167</td>
+<td>Animal</td>
+<td>AEXP_BlackBear</td>
+</tr>
+<tr>
+<td>britishofficersword</td>
+<td>214</td>
+<td>Melee weapons</td>
+<td>BritishOfficerSword</td>
+</tr>
+<tr>
+<td>britishshorthaircat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatBritishShorthair</td>
+</tr>
+<tr>
+<td>c96</td>
+<td>313</td>
+<td>Weapon</td>
+<td>Gun_C96_KA</td>
+</tr>
+<tr>
+<td>cabbages</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawCabbage</td>
+</tr>
+<tr>
+<td>camel</td>
+<td>533</td>
+<td>Animal</td>
+<td>AEXP_Camel</td>
+</tr>
+<tr>
+<td>camelmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Camel</td>
+</tr>
+<tr>
+<td>camelwool</td>
+<td>4</td>
+<td>Textiles</td>
+<td>WoolCamel</td>
+</tr>
+<tr>
+<td>cannedeggs</td>
+<td>6</td>
+<td>Meals</td>
+<td>VCE_CannedAP</td>
+</tr>
+<tr>
+<td>cannedfish</td>
+<td>3</td>
+<td>Meals</td>
+<td>VCE_CannedFish</td>
+</tr>
+<tr>
+<td>cannedfruit</td>
+<td>2</td>
+<td>Meals</td>
+<td>VCE_CannedFruit</td>
+</tr>
+<tr>
+<td>cannedmeat</td>
+<td>4</td>
+<td>Meals</td>
+<td>VCE_CannedMeat</td>
+</tr>
+<tr>
+<td>cannedproduce</td>
+<td>2</td>
+<td>Meals</td>
+<td>VCE_CannedProduce</td>
+</tr>
+<tr>
+<td>canningmachine</td>
+<td>383</td>
+<td>Production</td>
+<td>VCE_CanningMachine</td>
+</tr>
+<tr>
+<td>chargeturret</td>
+<td>1358</td>
+<td>Security</td>
+<td>VFES_Turret_ChargeTurret</td>
+</tr>
+<tr>
+<td>cheese</td>
+<td>17</td>
+<td>Meals</td>
+<td>VCE_Cheese</td>
+</tr>
+<tr>
+<td>cheesepress</td>
+<td>95</td>
+<td>Production</td>
+<td>VCE_CheesePress</td>
+</tr>
+<tr>
+<td>cheetah</td>
+<td>667</td>
+<td>Animal</td>
+<td>AEXP_Cheetah</td>
+</tr>
+<tr>
+<td>cheetahmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Cheetah</td>
+</tr>
+<tr>
+<td>chemfuelbarrel</td>
+<td>296</td>
+<td>Security</td>
+<td>VFES_ChemfuelBarrel</td>
+</tr>
+<tr>
+<td>cherries</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawCherry</td>
+</tr>
+<tr>
+<td>chihuahua</td>
+<td>550</td>
+<td>Animal</td>
+<td>AEXP_Chihuahua</td>
+</tr>
+<tr>
+<td>chitin</td>
+<td>10</td>
+<td>Raw resources</td>
+<td>VFEI_Chitin</td>
+</tr>
+<tr>
+<td>chocolatesyrup</td>
+<td>6</td>
+<td>Condiments</td>
+<td>VCE_ChocolateSyrup</td>
+</tr>
+<tr>
+<td>compoundeye</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_CompoundEye</td>
+</tr>
+<tr>
+<td>condimentpreptable</td>
+<td>259</td>
+<td>Production</td>
+<td>VCE_CondimentPrepTable</td>
+</tr>
+<tr>
+<td>corgi</td>
+<td>1083</td>
+<td>Animal</td>
+<td>AEXP_Corgi</td>
+</tr>
+<tr>
+<td>countertop</td>
+<td>53</td>
+<td>Furniture</td>
+<td>Table_Counter</td>
+</tr>
+<tr>
+<td>cowwool</td>
+<td>4</td>
+<td>Textiles</td>
+<td>VFEV_WoolCow</td>
+</tr>
+<tr>
+<td>coyote</td>
+<td>250</td>
+<td>Animal</td>
+<td>AEXP_Coyote</td>
+</tr>
+<tr>
+<td>coyotemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Coyote</td>
+</tr>
+<tr>
+<td>crocodile</td>
+<td>1333</td>
+<td>Animal</td>
+<td>AEXP_Crocodile</td>
+</tr>
+<tr>
+<td>crocodilemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Crocodile</td>
+</tr>
+<tr>
+<td>cryptocrossbow</td>
+<td>1433</td>
+<td>Crypto weapons</td>
+<td>VFEV_CryptoLightCrossbow</td>
+</tr>
+<tr>
+<td>cryptohatchet</td>
+<td>2133</td>
+<td>Crypto weapons</td>
+<td>VFEV_CryptoLightAxe</td>
+</tr>
+<tr>
+<td>cryptoheavycrossbow</td>
+<td>2367</td>
+<td>Crypto weapons</td>
+<td>VFEV_CryptoHeavyCrossbow</td>
+</tr>
+<tr>
+<td>cryptopistol</td>
+<td>1450</td>
+<td>Crypto weapons</td>
+<td>VFEV_CryptoPistol</td>
+</tr>
+<tr>
+<td>cryptorifle</td>
+<td>2100</td>
+<td>Crypto weapons</td>
+<td>VFEV_CryptoRifle</td>
+</tr>
+<tr>
+<td>cryptoshield</td>
+<td>2167</td>
+<td>Shields</td>
+<td>VFEV_Shield_Crypto</td>
+</tr>
+<tr>
+<td>daneaxe</td>
+<td>450</td>
+<td>Melee weapons</td>
+<td>VFE_MeleeWeapon_DaneAxe</td>
+</tr>
+<tr>
+<td>dartsboard</td>
+<td>174</td>
+<td>Furniture</td>
+<td>Joy_DartsBoard</td>
+</tr>
+<tr>
+<td>decoy</td>
+<td>140</td>
+<td>Security</td>
+<td>VFES_Turret_Decoy</td>
+</tr>
+<tr>
+<td>deepfriedfish</td>
+<td>12</td>
+<td>Meals</td>
+<td>VCE_DeepFriedFish</td>
+</tr>
+<tr>
+<td>deepfriedmeat</td>
+<td>12</td>
+<td>Meals</td>
+<td>VCE_DeepFriedBigMeat</td>
+</tr>
+<tr>
+<td>deepfriedvegetables</td>
+<td>12</td>
+<td>Meals</td>
+<td>VCE_DeepFriedVegetables</td>
+</tr>
+<tr>
+<td>deepfryer</td>
+<td>323</td>
+<td>Production</td>
+<td>VCE_DeepFrier</td>
+</tr>
+<tr>
+<td>deployableturret</td>
+<td>983</td>
+<td>Security</td>
+<td>VFES_Turret_FloorTurret</td>
+</tr>
+<tr>
+<td>deserttortoise</td>
+<td>417</td>
+<td>Animal</td>
+<td>AEXP_DesertTortoise</td>
+</tr>
+<tr>
+<td>digestibleresurrectornanites</td>
+<td>5000</td>
+<td>Condiments</td>
+<td>VCE_DigestibleResurrectorNanites</td>
+</tr>
+<tr>
+<td>dogmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Beagle</td>
+</tr>
+<tr>
+<td>doublefurbed</td>
+<td>350</td>
+<td>Furniture</td>
+<td>VFEV_DoubleFurBed</td>
+</tr>
+<tr>
+<td>dp-28</td>
+<td>892</td>
+<td>Ranged weapons</td>
+<td>Gun_DP-28_LMG</td>
+</tr>
+<tr>
+<td>dronegeneticmaterial</td>
+<td>167</td>
+<td>Manufactured</td>
+<td>VFEI_DroneGenome</td>
+</tr>
+<tr>
+<td>drugcabinet</td>
+<td>700</td>
+<td>Misc</td>
+<td>VFE_DrugCabinet</td>
+</tr>
+<tr>
+<td>eggplants</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawEggplant</td>
+</tr>
+<tr>
+<td>electricbutcher</td>
+<td>492</td>
+<td>Production</td>
+<td>VFE_TableButcherElectric</td>
+</tr>
+<tr>
+<td>electricdruglab</td>
+<td>1292</td>
+<td>Production</td>
+<td>VFE_TableDrugLabElectric</td>
+</tr>
+<tr>
+<td>electricstonecutter&#39;stable</td>
+<td>1033</td>
+<td>Production</td>
+<td>VFE_TableStonecutterElectric</td>
+</tr>
+<tr>
+<td>ergonomicbed</td>
+<td>450</td>
+<td>Furniture</td>
+<td>Bed_Ergonomic</td>
+</tr>
+<tr>
+<td>ergonomicchair</td>
+<td>858</td>
+<td>Furniture</td>
+<td>Seat_ModernChair</td>
+</tr>
+<tr>
+<td>ergonomicdoublebed</td>
+<td>867</td>
+<td>Furniture</td>
+<td>Bed_DoubleErgonomic</td>
+</tr>
+<tr>
+<td>fItemNameicationcabinet</td>
+<td>433</td>
+<td>Misc</td>
+<td>VFE_FItemNameicationCabinet</td>
+</tr>
+<tr>
+<td>fenrir</td>
+<td>10000</td>
+<td>Animal</td>
+<td>VFEV_Fenrir</td>
+</tr>
+<tr>
+<td>fenrirmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_VFEV_Fenrir</td>
+</tr>
+<tr>
+<td>fenrirskin</td>
+<td>27</td>
+<td>Leathers</td>
+<td>VFEV_Leather_Fenrir</td>
+</tr>
+<tr>
+<td>filecabinet</td>
+<td>93</td>
+<td>Furniture</td>
+<td>Misc_FileCabinet</td>
+</tr>
+<tr>
+<td>finebake</td>
+<td>33</td>
+<td>Meals</td>
+<td>VCE_FineBake</td>
+</tr>
+<tr>
+<td>finedessert</td>
+<td>33</td>
+<td>Meals</td>
+<td>VCE_FineDessert</td>
+</tr>
+<tr>
+<td>finegrill</td>
+<td>33</td>
+<td>Meals</td>
+<td>VCE_FineGrill</td>
+</tr>
+<tr>
+<td>finesoup</td>
+<td>33</td>
+<td>Meals</td>
+<td>VCE_CookedSoupFine</td>
+</tr>
+<tr>
+<td>flameturret</td>
+<td>1117</td>
+<td>Security</td>
+<td>VFES_Turret_Flame</td>
+</tr>
+<tr>
+<td>flour</td>
+<td>3</td>
+<td>Plant matter</td>
+<td>VCE_Flour</td>
+</tr>
+<tr>
+<td>frenchbulldog</td>
+<td>250</td>
+<td>Animal</td>
+<td>AEXP_FrenchBulldog</td>
+</tr>
+<tr>
+<td>fueledsmelter</td>
+<td>550</td>
+<td>Production</td>
+<td>VFE_FueledSmelter</td>
+</tr>
+<tr>
+<td>furbed</td>
+<td>171</td>
+<td>Furniture</td>
+<td>VFEV_FurBed</td>
+</tr>
+<tr>
+<td>gasheater</td>
+<td>218</td>
+<td>Temperature</td>
+<td>VPE_GasHeater</td>
+</tr>
+<tr>
+<td>gaspoweredexcavator</td>
+<td>483</td>
+<td>Production</td>
+<td>VPE_GasDrill</td>
+</tr>
+<tr>
+<td>gassunlamp</td>
+<td>160</td>
+<td>Furniture</td>
+<td>VPE_GasSunLamp</td>
+</tr>
+<tr>
+<td>gastank</td>
+<td>321</td>
+<td>Power</td>
+<td>VPE_GasTank</td>
+</tr>
+<tr>
+<td>germanshepherd</td>
+<td>750</td>
+<td>Animal</td>
+<td>AEXP_GermanShepherd</td>
+</tr>
+<tr>
+<td>gewehr98</td>
+<td>433</td>
+<td>Weapon</td>
+<td>Gun_Gew_98_KA</td>
+</tr>
+<tr>
+<td>gewehr98withbayonet</td>
+<td>533</td>
+<td>Weapon</td>
+<td>Gun_Gew_98_Bayonet_KA</td>
+</tr>
+<tr>
+<td>gigalocust</td>
+<td>1333</td>
+<td>Animal</td>
+<td>VFEI_Insectoid_Gigalocust</td>
+</tr>
+<tr>
+<td>gilamonster</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_GilaMonster</td>
+</tr>
+<tr>
+<td>gilamonstermeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_GilaMonster</td>
+</tr>
+<tr>
+<td>giraffe</td>
+<td>1083</td>
+<td>Animal</td>
+<td>AEXP_Giraffe</td>
+</tr>
+<tr>
+<td>giraffemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Giraffe</td>
+</tr>
+<tr>
+<td>gorilla</td>
+<td>917</td>
+<td>Animal</td>
+<td>AEXP_Gorilla</td>
+</tr>
+<tr>
+<td>gourmetbake</td>
+<td>117</td>
+<td>Meals</td>
+<td>VCE_GourmetBake</td>
+</tr>
+<tr>
+<td>gourmetdessert</td>
+<td>125</td>
+<td>Meals</td>
+<td>VCE_GourmetDessert</td>
+</tr>
+<tr>
+<td>gourmetgrill</td>
+<td>125</td>
+<td>Meals</td>
+<td>VCE_GourmetGrill</td>
+</tr>
+<tr>
+<td>gourmetmeal</td>
+<td>117</td>
+<td>Meals</td>
+<td>VCE_MealGourmet</td>
+</tr>
+<tr>
+<td>gourmetsoup</td>
+<td>117</td>
+<td>Meals</td>
+<td>VCE_CookedSoupGourmet</td>
+</tr>
+<tr>
+<td>greatdane</td>
+<td>1083</td>
+<td>Animal</td>
+<td>AEXP_GreatDane</td>
+</tr>
+<tr>
+<td>grill</td>
+<td>282</td>
+<td>Production</td>
+<td>VCE_Grill</td>
+</tr>
+<tr>
+<td>harpoon</td>
+<td>417</td>
+<td>Ranged weapons</td>
+<td>VFE_Harpoon</td>
+</tr>
+<tr>
+<td>heavycryptoaxe</td>
+<td>2417</td>
+<td>Crypto weapons</td>
+<td>VFEV_CryptoHeavyAxe</td>
+</tr>
+<tr>
+<td>helixiengassmelter</td>
+<td>667</td>
+<td>Production</td>
+<td>VPE_GasSmelter</td>
+</tr>
+<tr>
+<td>helixiengasstove</td>
+<td>375</td>
+<td>Production</td>
+<td>VPE_GasStove</td>
+</tr>
+<tr>
+<td>hippopotamus</td>
+<td>1333</td>
+<td>Animal</td>
+<td>AEXP_Hippopotamus</td>
+</tr>
+<tr>
+<td>hippopotamusleather</td>
+<td>6</td>
+<td>Leathers</td>
+<td>AEXP_Leather_Hippopotamus</td>
+</tr>
+<tr>
+<td>hippopotamusmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Hippopotamus</td>
+</tr>
+<tr>
+<td>hnefatafltable</td>
+<td>281</td>
+<td>Furniture</td>
+<td>VFEV_Hnefatafl</td>
+</tr>
+<tr>
+<td>hotsauce</td>
+<td>2</td>
+<td>Condiments</td>
+<td>VCE_HotSauce</td>
+</tr>
+<tr>
+<td>hyena</td>
+<td>308</td>
+<td>Animal</td>
+<td>AEXP_Hyena</td>
+</tr>
+<tr>
+<td>hyenameat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Hyena</td>
+</tr>
+<tr>
+<td>indianelephant</td>
+<td>1000</td>
+<td>Animal</td>
+<td>AEXP_IndianElephant</td>
+</tr>
+<tr>
+<td>indianelephantmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_IndianElephant</td>
+</tr>
+<tr>
+<td>industrialradio</td>
+<td>433</td>
+<td>Recreation</td>
+<td>Radio_Industrial</td>
+</tr>
+<tr>
+<td>insectcheese</td>
+<td>17</td>
+<td>Meals</td>
+<td>VCE_InsectCheese</td>
+</tr>
+<tr>
+<td>insectjellypreserves</td>
+<td>15</td>
+<td>Condiments</td>
+<td>VCE_InsectJellyPreserves</td>
+</tr>
+<tr>
+<td>insectmilk</td>
+<td>5</td>
+<td>Animal products</td>
+<td>VFEI_InsectMilk</td>
+</tr>
+<tr>
+<td>insectoidarm</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_InsectoidArm</td>
+</tr>
+<tr>
+<td>insectoidleg</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_InsectoidLeg</td>
+</tr>
+<tr>
+<td>insectoidqueen</td>
+<td>3550</td>
+<td>Animal</td>
+<td>VFEI_Insectoid_Queen</td>
+</tr>
+<tr>
+<td>jaguar</td>
+<td>667</td>
+<td>Animal</td>
+<td>AEXP_Jaguar</td>
+</tr>
+<tr>
+<td>jaguarmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Jaguar</td>
+</tr>
+<tr>
+<td>jellysac</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_JellySac</td>
+</tr>
+<tr>
+<td>kaisermachiningtable</td>
+<td>608</td>
+<td>Production</td>
+<td>TableKA</td>
+</tr>
+<tr>
+<td>ketchup</td>
+<td>2</td>
+<td>Condiments</td>
+<td>VCE_Ketchup</td>
+</tr>
+<tr>
+<td>kitchensinkcabinet</td>
+<td>327</td>
+<td>Misc</td>
+<td>VFE_KitchenSinkCabinet</td>
+</tr>
+<tr>
+<td>lampendtable</td>
+<td>169</td>
+<td>Furniture</td>
+<td>Table_LightEndTable</td>
+</tr>
+<tr>
+<td>landmine</td>
+<td>261</td>
+<td>Security</td>
+<td>VFES_Landmine</td>
+</tr>
+<tr>
+<td>largeadvancedbattery</td>
+<td>1467</td>
+<td>Power</td>
+<td>VFE_LargeAdvancedBattery</td>
+</tr>
+<tr>
+<td>largebattery</td>
+<td>667</td>
+<td>Power</td>
+<td>VFE_LargeBattery</td>
+</tr>
+<tr>
+<td>largebin</td>
+<td>305</td>
+<td>Furniture</td>
+<td>Bin_Large</td>
+</tr>
+<tr>
+<td>largevanometricpowercell</td>
+<td>4000</td>
+<td>Special</td>
+<td>VFE_LargeVanometricPowerCell</td>
+</tr>
+<tr>
+<td>larvae</td>
+<td>1667</td>
+<td>Animal</td>
+<td>VFEI_Insectoid_Larvae</td>
+</tr>
+<tr>
+<td>lavishbake</td>
+<td>67</td>
+<td>Meals</td>
+<td>VCE_LavishBake</td>
+</tr>
+<tr>
+<td>lavishdessert</td>
+<td>67</td>
+<td>Meals</td>
+<td>VCE_LavishDessert</td>
+</tr>
+<tr>
+<td>lavishgrill</td>
+<td>67</td>
+<td>Meals</td>
+<td>VCE_LavishGrill</td>
+</tr>
+<tr>
+<td>lavishsoup</td>
+<td>67</td>
+<td>Meals</td>
+<td>VCE_CookedSoupLavish</td>
+</tr>
+<tr>
+<td>lemur</td>
+<td>250</td>
+<td>Animal</td>
+<td>AEXP_Lemur</td>
+</tr>
+<tr>
+<td>lightningrod</td>
+<td>667</td>
+<td>Special</td>
+<td>VPE_LightningRod</td>
+</tr>
+<tr>
+<td>lion</td>
+<td>2000</td>
+<td>Animal</td>
+<td>AEXP_Lion</td>
+</tr>
+<tr>
+<td>lionmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Lion</td>
+</tr>
+<tr>
+<td>lionpelt</td>
+<td>9</td>
+<td>Leathers</td>
+<td>AEXP_Leather_Lion</td>
+</tr>
+<tr>
+<td>longwaveradio</td>
+<td>1033</td>
+<td>Recreation</td>
+<td>Radio_Spacer</td>
+</tr>
+<tr>
+<td>lothurr</td>
+<td>5833</td>
+<td>Animal</td>
+<td>VFEV_Lothurr</td>
+</tr>
+<tr>
+<td>lothurrantler</td>
+<td>2000</td>
+<td>Items</td>
+<td>VFEV_LothurrAntler</td>
+</tr>
+<tr>
+<td>lothurrleather</td>
+<td>22</td>
+<td>Leathers</td>
+<td>VFEV_Leather_Lothurr</td>
+</tr>
+<tr>
+<td>lothurrmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_VFEV_Lothurr</td>
+</tr>
+<tr>
+<td>m17gasmask(ig)</td>
+<td>73</td>
+<td>Headgear</td>
+<td>Apparel_IGGasmask</td>
+</tr>
+<tr>
+<td>m1915stielhandgranate</td>
+<td>375</td>
+<td>Weapon</td>
+<td>Weapon_M1915_KA</td>
+</tr>
+<tr>
+<td>m1916selbstlader</td>
+<td>733</td>
+<td>Weapon</td>
+<td>Gun_M1916_Selbstlader_KA</td>
+</tr>
+<tr>
+<td>machiningcabinet</td>
+<td>483</td>
+<td>Misc</td>
+<td>VFE_MachiningCabinet</td>
+</tr>
+<tr>
+<td>mandibles</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_Mandibles</td>
+</tr>
+<tr>
+<td>mandrill</td>
+<td>458</td>
+<td>Animal</td>
+<td>AEXP_Mandrill</td>
+</tr>
+<tr>
+<td>mayo</td>
+<td>6</td>
+<td>Condiments</td>
+<td>VCE_Mayo</td>
+</tr>
+<tr>
+<td>mead</td>
+<td>25</td>
+<td>Drugs</td>
+<td>VFEV_Mead</td>
+</tr>
+<tr>
+<td>meadfermentingbarrel</td>
+<td>94</td>
+<td>Production</td>
+<td>VFEV_MeadFermentingBarrel</td>
+</tr>
+<tr>
+<td>megapede</td>
+<td>1250</td>
+<td>Animal</td>
+<td>VFEI_Insectoid_Megapede</td>
+</tr>
+<tr>
+<td>megascorpion</td>
+<td>167</td>
+<td>Animal</td>
+<td>AEXP_Megascorpion</td>
+</tr>
+<tr>
+<td>megawolverine</td>
+<td>1417</td>
+<td>Animal</td>
+<td>AEXP_MegaWolverine</td>
+</tr>
+<tr>
+<td>megawolverinemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_MegaWolverine</td>
+</tr>
+<tr>
+<td>militaryturret</td>
+<td>842</td>
+<td>Security</td>
+<td>VFES_Turret_MilitaryTurret</td>
+</tr>
+<tr>
+<td>mjollnirstriketargeter</td>
+<td>2000</td>
+<td>Utility</td>
+<td>VFEV_OrbitalTargeterMjollnir</td>
+</tr>
+<tr>
+<td>moderncomputer</td>
+<td>1100</td>
+<td>Recreation</td>
+<td>Joy_ModernComputer</td>
+</tr>
+<tr>
+<td>modernlamp</td>
+<td>129</td>
+<td>Furniture</td>
+<td>Light_ModernLamp</td>
+</tr>
+<tr>
+<td>moose</td>
+<td>750</td>
+<td>Animal</td>
+<td>AEXP_Moose</td>
+</tr>
+<tr>
+<td>mooseheaddress</td>
+<td>203</td>
+<td>Headgear</td>
+<td>VFEV_MooseHeaddress</td>
+</tr>
+<tr>
+<td>moosemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Moose</td>
+</tr>
+<tr>
+<td>mosinnagant</td>
+<td>450</td>
+<td>Ranged weapons</td>
+<td>Gun_WWII_MosinNagant_Normal</td>
+</tr>
+<tr>
+<td>mp18</td>
+<td>567</td>
+<td>Weapon</td>
+<td>Gun_MP_18_KA</td>
+</tr>
+<tr>
+<td>munchkincat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatMunchkin</td>
+</tr>
+<tr>
+<td>muskox</td>
+<td>475</td>
+<td>Animal</td>
+<td>AEXP_Muskox</td>
+</tr>
+<tr>
+<td>muskoxmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Muskox</td>
+</tr>
+<tr>
+<td>muskoxwool</td>
+<td>12</td>
+<td>Textiles</td>
+<td>AEXP_MuskOxWool</td>
+</tr>
+<tr>
+<td>nagantrevolver</td>
+<td>277</td>
+<td>Ranged weapons</td>
+<td>Gun_Nagant_Revolver</td>
+</tr>
+<tr>
+<td>njorun</td>
+<td>11667</td>
+<td>Animal</td>
+<td>VFEV_Njorun</td>
+</tr>
+<tr>
+<td>njorunmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_VFEV_Njorun</td>
+</tr>
+<tr>
+<td>njorunfur</td>
+<td>17</td>
+<td>Leathers</td>
+<td>VFEV_Leather_Njorun</td>
+</tr>
+<tr>
+<td>noblefurcoat</td>
+<td>433</td>
+<td>Apparel</td>
+<td>VFEV_Apparel_RoyalFurCoat</td>
+</tr>
+<tr>
+<td>norwegianforestcat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatNorwegianForest</td>
+</tr>
+<tr>
+<td>oldcomputer</td>
+<td>517</td>
+<td>Recreation</td>
+<td>Joy_InudstrialComputer</td>
+</tr>
+<tr>
+<td>onions</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawOnion</td>
+</tr>
+<tr>
+<td>oranges</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawOrange</td>
+</tr>
+<tr>
+<td>otter</td>
+<td>283</td>
+<td>Animal</td>
+<td>AEXP_Otter</td>
+</tr>
+<tr>
+<td>ottermeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Otter</td>
+</tr>
+<tr>
+<td>outdoorlamp</td>
+<td>128</td>
+<td>Furniture</td>
+<td>Light_Streetlamp</td>
+</tr>
+<tr>
+<td>peaches</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawPeach</td>
+</tr>
+<tr>
+<td>pears</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawPear</td>
+</tr>
+<tr>
+<td>peas</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawPeas</td>
+</tr>
+<tr>
+<td>peppers</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawPepper</td>
+</tr>
+<tr>
+<td>persiancat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatPersian</td>
+</tr>
+<tr>
+<td>pheromonesecretor</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_PheromoneSecretor</td>
+</tr>
+<tr>
+<td>piano</td>
+<td>908</td>
+<td>Furniture</td>
+<td>Joy_Piano</td>
+</tr>
+<tr>
+<td>plasmascattergun</td>
+<td>3833</td>
+<td>Ranged weapons</td>
+<td>VFE_Gun_PlasmaScattergun</td>
+</tr>
+<tr>
+<td>plasmabeamrifle</td>
+<td>4167</td>
+<td>Ranged weapons</td>
+<td>VFE_Gun_PlasmabeamRifle</td>
+</tr>
+<tr>
+<td>plasmacutter</td>
+<td>3333</td>
+<td>Ranged weapons</td>
+<td>VFE_Gun_Plasmacutter</td>
+</tr>
+<tr>
+<td>plasmapiercer</td>
+<td>3833</td>
+<td>Ranged weapons</td>
+<td>VFE_Gun_Plasmapiercer</td>
+</tr>
+<tr>
+<td>plasmasaw</td>
+<td>3333</td>
+<td>Melee weapons</td>
+<td>VFE_Plasmasaw</td>
+</tr>
+<tr>
+<td>plums</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawPlum</td>
+</tr>
+<tr>
+<td>pneumaticclaw</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_PneumaticClaw</td>
+</tr>
+<tr>
+<td>poodle</td>
+<td>417</td>
+<td>Animal</td>
+<td>AEXP_Poodle</td>
+</tr>
+<tr>
+<td>porcupine</td>
+<td>200</td>
+<td>Animal</td>
+<td>AEXP_Porcupine</td>
+</tr>
+<tr>
+<td>porcupinemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Porcupine</td>
+</tr>
+<tr>
+<td>portablechemfuelpoweredgenerator</td>
+<td>242</td>
+<td>Power</td>
+<td>VFE_PortableChemfuelPoweredGenerator</td>
+</tr>
+<tr>
+<td>portablewood-firedgenerator</td>
+<td>189</td>
+<td>Power</td>
+<td>VFE_PortableWoodFiredGenerator</td>
+</tr>
+<tr>
+<td>ppsh-41</td>
+<td>458</td>
+<td>Ranged weapons</td>
+<td>Gun_WWII_PPShSMG</td>
+</tr>
+<tr>
+<td>predatorstomach</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_PredatorStomach</td>
+</tr>
+<tr>
+<td>pricklypears</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawPricklyPear</td>
+</tr>
+<tr>
+<td>primatemeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Gorilla</td>
+</tr>
+<tr>
+<td>prunes</td>
+<td>2</td>
+<td>Raw fruits</td>
+<td>VCE_RawPrunes</td>
+</tr>
+<tr>
+<td>psychicanimaltamer</td>
+<td>2500</td>
+<td>Artifacts</td>
+<td>VFEI_Artifacts_PsychicAnimalTamer</td>
+</tr>
+<tr>
+<td>psychiccornucopia</td>
+<td>1167</td>
+<td>Artifacts</td>
+<td>VFEV_PlantGrowerArtifact</td>
+</tr>
+<tr>
+<td>psychicpacifier</td>
+<td>2500</td>
+<td>Artifacts</td>
+<td>VFEI_Artifacts_PsychicPacifier</td>
+</tr>
+<tr>
+<td>psychicpylon</td>
+<td>2167</td>
+<td>Special</td>
+<td>VFES_PsychicPylon</td>
+</tr>
+<tr>
+<td>psychicwarhead</td>
+<td>1667</td>
+<td>Mortar shells</td>
+<td>VFEI_Shell_PsychicWarhead</td>
+</tr>
+<tr>
+<td>pug</td>
+<td>500</td>
+<td>Animal</td>
+<td>AEXP_Pug</td>
+</tr>
+<tr>
+<td>pumpkins</td>
+<td>7</td>
+<td>Vegetarian</td>
+<td>VCE_RawPumpkin</td>
+</tr>
+<tr>
+<td>punchingbag</td>
+<td>375</td>
+<td>Furniture</td>
+<td>Joy_PunchingBag</td>
+</tr>
+<tr>
+<td>rattlesnake</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_Rattlesnake</td>
+</tr>
+<tr>
+<td>rawhoney</td>
+<td>7</td>
+<td>Animal products</td>
+<td>VFEV_Honey</td>
+</tr>
+<tr>
+<td>rottweiler</td>
+<td>417</td>
+<td>Animal</td>
+<td>AEXP_Rottweiler</td>
+</tr>
+<tr>
+<td>roulettetable</td>
+<td>708</td>
+<td>Furniture</td>
+<td>Joy_RouletteTable</td>
+</tr>
+<tr>
+<td>roundshield</td>
+<td>262</td>
+<td>Shields</td>
+<td>VFEV_Shield_Round</td>
+</tr>
+<tr>
+<td>royalarmchair</td>
+<td>1583</td>
+<td>Furniture</td>
+<td>Seat_RoyalArmchair</td>
+</tr>
+<tr>
+<td>royalchair</td>
+<td>908</td>
+<td>Furniture</td>
+<td>Seat_RoyalChair</td>
+</tr>
+<tr>
+<td>royaldresser</td>
+<td>1175</td>
+<td>Furniture</td>
+<td>Table_RoyalDresser</td>
+</tr>
+<tr>
+<td>royalendtable</td>
+<td>742</td>
+<td>Furniture</td>
+<td>Table_RoyalEndTable</td>
+</tr>
+<tr>
+<td>royalgeneticmaterial</td>
+<td>333</td>
+<td>Manufactured</td>
+<td>VFEI_RoyalGenome</td>
+</tr>
+<tr>
+<td>royalinsectjelly</td>
+<td>17</td>
+<td>Animal products</td>
+<td>VFEI_RoyalInsectJelly</td>
+</tr>
+<tr>
+<td>royalmegaspider</td>
+<td>1167</td>
+<td>Animal</td>
+<td>VFEI_Insectoid_RoyalMegaspider</td>
+</tr>
+<tr>
+<td>royalposterbed</td>
+<td>2008</td>
+<td>Furniture</td>
+<td>Bed_Kingsize</td>
+</tr>
+<tr>
+<td>royaltable(1x1)</td>
+<td>280</td>
+<td>Furniture</td>
+<td>Table_Royal1x1c</td>
+</tr>
+<tr>
+<td>royaltable(1x2)</td>
+<td>542</td>
+<td>Furniture</td>
+<td>Table_Royal1x2c</td>
+</tr>
+<tr>
+<td>royaltable(2x2)</td>
+<td>1092</td>
+<td>Furniture</td>
+<td>Table_Royal2x2c</td>
+</tr>
+<tr>
+<td>royaltable(2x4)</td>
+<td>1475</td>
+<td>Furniture</td>
+<td>Table_Royal2x4c</td>
+</tr>
+<tr>
+<td>royaltable(3x3)</td>
+<td>1617</td>
+<td>Furniture</td>
+<td>Table_Royal3x3c</td>
+</tr>
+<tr>
+<td>runestone</td>
+<td>625</td>
+<td>Furniture</td>
+<td>VFEV_RuneStone</td>
+</tr>
+<tr>
+<td>s98/05bayonet</td>
+<td>97</td>
+<td>Weapon</td>
+<td>MeleeWeapon_S98_05_KA</td>
+</tr>
+<tr>
+<td>salt</td>
+<td>3</td>
+<td>Condiments</td>
+<td>VCE_Salt</td>
+</tr>
+<tr>
+<td>searchlight</td>
+<td>475</td>
+<td>Security</td>
+<td>VFES_Turret_Searchlight</td>
+</tr>
+<tr>
+<td>seax</td>
+<td>239</td>
+<td>Melee weapons</td>
+<td>VFE_MeleeWeapon_Seax</td>
+</tr>
+<tr>
+<td>sentrygun</td>
+<td>1058</td>
+<td>Security</td>
+<td>VFES_Turret_SentryGun</td>
+</tr>
+<tr>
+<td>shelf(1x1)</td>
+<td>52</td>
+<td>Furniture</td>
+<td>Shelf_1x1c</td>
+</tr>
+<tr>
+<td>shih-tzu</td>
+<td>500</td>
+<td>Animal</td>
+<td>AEXP_Shih-Tzu</td>
+</tr>
+<tr>
+<td>siamesecat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatSiamese</td>
+</tr>
+<tr>
+<td>simplebake</td>
+<td>25</td>
+<td>Meals</td>
+<td>VCE_SimpleBake</td>
+</tr>
+<tr>
+<td>simplebed</td>
+<td>137</td>
+<td>Furniture</td>
+<td>Bed_Simple</td>
+</tr>
+<tr>
+<td>simpledessert</td>
+<td>25</td>
+<td>Meals</td>
+<td>VCE_SimpleDessert</td>
+</tr>
+<tr>
+<td>simplegrill</td>
+<td>25</td>
+<td>Meals</td>
+<td>VCE_SimpleGrill</td>
+</tr>
+<tr>
+<td>simplesoup</td>
+<td>20</td>
+<td>Meals</td>
+<td>VCE_CookedSoupSimple</td>
+</tr>
+<tr>
+<td>sittingcushion</td>
+<td>86</td>
+<td>Furniture</td>
+<td>Seat_Cushion</td>
+</tr>
+<tr>
+<td>slabbed</td>
+<td>111</td>
+<td>Furniture</td>
+<td>Bed_StoneSlab</td>
+</tr>
+<tr>
+<td>smallbattery</td>
+<td>182</td>
+<td>Power</td>
+<td>VFE_SmallBattery</td>
+</tr>
+<tr>
+<td>smallbin</td>
+<td>136</td>
+<td>Furniture</td>
+<td>Bin_Small</td>
+</tr>
+<tr>
+<td>smallshieldgenerator</td>
+<td>3983</td>
+<td>Security</td>
+<td>VFES_ShieldGenerator_Small</td>
+</tr>
+<tr>
+<td>smallvanometricpowercell</td>
+<td>667</td>
+<td>Special</td>
+<td>VFE_SmallVanometricPowerCell</td>
+</tr>
+<tr>
+<td>smithingcabinet</td>
+<td>483</td>
+<td>Misc</td>
+<td>VFE_SmithyCabinet</td>
+</tr>
+<tr>
+<td>smokeleafbutter</td>
+<td>12</td>
+<td>Condiments</td>
+<td>VCE_SmokeleafButter</td>
+</tr>
+<tr>
+<td>somalicat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatSomali</td>
+</tr>
+<tr>
+<td>sonicinfestationrepeller</td>
+<td>3217</td>
+<td>Furniture</td>
+<td>VFEI_SonicInfestationRepeller</td>
+</tr>
+<tr>
+<td>sphynxcat</td>
+<td>333</td>
+<td>Animal</td>
+<td>AEXP_CatSphynx</td>
+</tr>
+<tr>
+<td>spices</td>
+<td>11</td>
+<td>Condiments</td>
+<td>VCE_RawSpices</td>
+</tr>
+<tr>
+<td>spidersilk</td>
+<td>17</td>
+<td>Textiles</td>
+<td>VFEI_Spidersilk</td>
+</tr>
+<tr>
+<td>squarechair</td>
+<td>198</td>
+<td>Furniture</td>
+<td>Seat_SquareChair</td>
+</tr>
+<tr>
+<td>sugar</td>
+<td>20</td>
+<td>Condiments</td>
+<td>VCE_RawSugar</td>
+</tr>
+<tr>
+<td>svt-40rifle</td>
+<td>633</td>
+<td>Ranged weapons</td>
+<td>Gun_WWII_Svt-40_Rifle</td>
+</tr>
+<tr>
+<td>sweetroll</td>
+<td>11</td>
+<td>Foods</td>
+<td>VFEV_Sweetroll</td>
+</tr>
+<tr>
+<td>synapticcerebellum</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_SynapticCerebellum</td>
+</tr>
+<tr>
+<td>table(1x1)</td>
+<td>70</td>
+<td>Furniture</td>
+<td>Table_1x1c</td>
+</tr>
+<tr>
+<td>tailorcabinet</td>
+<td>327</td>
+<td>Misc</td>
+<td>VFE_TailorCabinet</td>
+</tr>
+<tr>
+<td>tapir</td>
+<td>500</td>
+<td>Animal</td>
+<td>AEXP_Tapir</td>
+</tr>
+<tr>
+<td>throwabletorchbelt</td>
+<td>43</td>
+<td>Utility</td>
+<td>VFEV_Apparel_TorchBelt</td>
+</tr>
+<tr>
+<td>throwingaxe</td>
+<td>260</td>
+<td>Ranged weapons</td>
+<td>VFE_ThrowingAxe</td>
+</tr>
+<tr>
+<td>tiger</td>
+<td>1083</td>
+<td>Animal</td>
+<td>AEXP_Tiger</td>
+</tr>
+<tr>
+<td>tigerleather</td>
+<td>12</td>
+<td>Leathers</td>
+<td>AEXP_Leather_Tiger</td>
+</tr>
+<tr>
+<td>tigermeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_AEXP_Tiger</td>
+</tr>
+<tr>
+<td>tomatoes</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VCE_RawTomatoes</td>
+</tr>
+<tr>
+<td>trainingdummy</td>
+<td>80</td>
+<td>Recreation</td>
+<td>VFEV_TrainingDummy</td>
+</tr>
+<tr>
+<td>ushanka</td>
+<td>200</td>
+<td>Headgear</td>
+<td>Apparel_Ushanka</td>
+</tr>
+<tr>
+<td>vat-grownboomtick</td>
+<td>167</td>
+<td>Animal</td>
+<td>VFEI_VatgrownBoomtick</td>
+</tr>
+<tr>
+<td>vat-growncuterpillar</td>
+<td>750</td>
+<td>Animal</td>
+<td>VFEI_VatGrownCuterpillar</td>
+</tr>
+<tr>
+<td>vat-growngigalocust</td>
+<td>1083</td>
+<td>Animal</td>
+<td>VFEI_VatGrownGigalocust</td>
+</tr>
+<tr>
+<td>vat-growngigascorpion</td>
+<td>833</td>
+<td>Animal</td>
+<td>VFEI_VatGrownGigascorpion</td>
+</tr>
+<tr>
+<td>vat-growngigawig</td>
+<td>750</td>
+<td>Animal</td>
+<td>VFEI_VatGrownGigawig</td>
+</tr>
+<tr>
+<td>vat-grownmegacricket</td>
+<td>292</td>
+<td>Animal</td>
+<td>VFEI_VatGrownMegacricket</td>
+</tr>
+<tr>
+<td>vat-grownmegapede</td>
+<td>1250</td>
+<td>Animal</td>
+<td>VFEI_VatGrownMegapede</td>
+</tr>
+<tr>
+<td>vat-grownmegascarab</td>
+<td>167</td>
+<td>Animal</td>
+<td>VFEI_VatGrownMegascarab</td>
+</tr>
+<tr>
+<td>vat-grownmegaspider</td>
+<td>833</td>
+<td>Animal</td>
+<td>VFEI_VatgrownMegaspider</td>
+</tr>
+<tr>
+<td>vat-grownmilkbeetle</td>
+<td>583</td>
+<td>Animal</td>
+<td>VFEI_VatGrownMilkbeetle</td>
+</tr>
+<tr>
+<td>vat-grownmonstrosity</td>
+<td>1250</td>
+<td>Animal</td>
+<td>VFEI_VatGrownMonstrosity</td>
+</tr>
+<tr>
+<td>vat-grownprincess</td>
+<td>1500</td>
+<td>Animal</td>
+<td>VFEI_VatGrownPrincess</td>
+</tr>
+<tr>
+<td>vat-grownroyallarva</td>
+<td>83</td>
+<td>Animal</td>
+<td>VFEI_VatgrownRoyalLarva</td>
+</tr>
+<tr>
+<td>vat-grownroyalmaggot</td>
+<td>333</td>
+<td>Animal</td>
+<td>VFEI_VatGrownRoyalMaggot</td>
+</tr>
+<tr>
+<td>vat-grownspelopede</td>
+<td>333</td>
+<td>Animal</td>
+<td>VFEI_VatGrownSpelopede</td>
+</tr>
+<tr>
+<td>vat-grownspiderweaver</td>
+<td>333</td>
+<td>Animal</td>
+<td>VFEI_VatGrownSpiderweaver</td>
+</tr>
+<tr>
+<td>vat-growntitanbeetle</td>
+<td>917</td>
+<td>Animal</td>
+<td>VFEI_VatGrownTitanbeetle</td>
+</tr>
+<tr>
+<td>vat-grownwargling</td>
+<td>833</td>
+<td>Animal</td>
+<td>VFEI_VatGrownWargling</td>
+</tr>
+<tr>
+<td>vat-grownworkerant</td>
+<td>333</td>
+<td>Animal</td>
+<td>VFEI_VatGrownWorkerAnt</td>
+</tr>
+<tr>
+<td>venomgland</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_VenomGland</td>
+</tr>
+<tr>
+<td>ventricularsleeve</td>
+<td>2000</td>
+<td>Insect</td>
+<td>VFEI_VentricularSleeve</td>
+</tr>
+<tr>
+<td>wardrobe</td>
+<td>285</td>
+<td>Furniture</td>
+<td>Table_Wardrobe</td>
+</tr>
+<tr>
+<td>warriorgeneticmaterial</td>
+<td>250</td>
+<td>Manufactured</td>
+<td>VFEI_WarriorGenome</td>
+</tr>
+<tr>
+<td>weaponrack</td>
+<td>137</td>
+<td>Furniture</td>
+<td>Shelf_WeaponRack</td>
+</tr>
+<tr>
+<td>welshterrier</td>
+<td>417</td>
+<td>Animal</td>
+<td>AEXP_WelshTerrier</td>
+</tr>
+<tr>
+<td>wildebeest</td>
+<td>567</td>
+<td>Animal</td>
+<td>AEXP_Wildebeest</td>
+</tr>
+<tr>
+<td>wildebeestpelt</td>
+<td>5</td>
+<td>Leathers</td>
+<td>AEXP_Leather_Wildebeest</td>
+</tr>
+<tr>
+<td>wolfhound</td>
+<td>583</td>
+<td>Animal</td>
+<td>VFEV_Wolfhound</td>
+</tr>
+<tr>
+<td>wolfhoundmeat</td>
+<td>3</td>
+<td>Meat</td>
+<td>Meat_VFEV_Wolfhound</td>
+</tr>
+<tr>
+<td>woolycow</td>
+<td>767</td>
+<td>Animal</td>
+<td>VFEV_WoolyCow</td>
+</tr>
+<tr>
+<td>zebra</td>
+<td>1000</td>
+<td>Animal</td>
+<td>AEXP_Zebra</td>
+</tr>
+<tr>
+<td>barstool</td>
+<td>69</td>
+<td>Furniture</td>
+<td>StoolBar</td>
+</tr>
+<tr>
+<td>chemboiler</td>
+<td>608</td>
+<td>Temperature</td>
+<td>ChemBoiler</td>
+</tr>
+<tr>
+<td>chemlamp</td>
+<td>102</td>
+<td>Furniture</td>
+<td>Chemlamp</td>
+</tr>
+<tr>
+<td>chemlamppost</td>
+<td>106</td>
+<td>Furniture</td>
+<td>ChemlampPost</td>
+</tr>
+<tr>
+<td>chemshine</td>
+<td>17</td>
+<td>Drugs</td>
+<td>Chemshine</td>
+</tr>
+<tr>
+<td>chemshinebarrel</td>
+<td>95</td>
+<td>Production</td>
+<td>Building_ChemshineBarrel</td>
+</tr>
+<tr>
+<td>circulartable</td>
+<td>142</td>
+<td>Furniture</td>
+<td>TableCircular</td>
+</tr>
+<tr>
+<td>claymore</td>
+<td>442</td>
+<td>Melee weapons</td>
+<td>VFEM_MeleeWeapon_Claymore</td>
+</tr>
+<tr>
+<td>double-actionrevolver</td>
+<td>244</td>
+<td>Ranged weapons</td>
+<td>VFES_Gun_DoubleActionRevolver</td>
+</tr>
+<tr>
+<td>double-barreledshotgun</td>
+<td>442</td>
+<td>Ranged weapons</td>
+<td>VFES_Gun_DoubleBarreledShotgun</td>
+</tr>
+<tr>
+<td>dynamite</td>
+<td>658</td>
+<td>Grenades</td>
+<td>VFES_Weapon_GrenadeDynamite</td>
+</tr>
+<tr>
+<td>farotable</td>
+<td>255</td>
+<td>Furniture</td>
+<td>TableFaro</td>
+</tr>
+<tr>
+<td>flatcap</td>
+<td>95</td>
+<td>Headgear</td>
+<td>VFES_Headgear_FlatCap</td>
+</tr>
+<tr>
+<td>gatlinggunturret</td>
+<td>408</td>
+<td>Security</td>
+<td>Turret_GatlingGun</td>
+</tr>
+<tr>
+<td>grapemust</td>
+<td>4</td>
+<td>Manufactured</td>
+<td>VFEM_Must</td>
+</tr>
+<tr>
+<td>grapes</td>
+<td>2</td>
+<td>Vegetarian</td>
+<td>VFEM_RawGrapes</td>
+</tr>
+<tr>
+<td>heatershield</td>
+<td>367</td>
+<td>Shields</td>
+<td>VFEM_Shield_Heater</td>
+</tr>
+<tr>
+<td>heavycrossbow</td>
+<td>417</td>
+<td>Ranged weapons</td>
+<td>VFEM_Bow_HeavyCrossbow</td>
+</tr>
+<tr>
+<td>heavymace</td>
+<td>289</td>
+<td>Melee weapons</td>
+<td>VFEM_MeleeWeapon_HeavyMace</td>
+</tr>
+<tr>
+<td>huntingrifle</td>
+<td>483</td>
+<td>Ranged weapons</td>
+<td>VFES_Gun_HuntingRifle</td>
+</tr>
+<tr>
+<td>illuminatenexusconnection</td>
+<td>60</td>
+<td>Misc</td>
+<td>AvaliNexus</td>
+</tr>
+<tr>
+<td>kiteshield</td>
+<td>241</td>
+<td>Shields</td>
+<td>VFEM_Shield_Kite</td>
+</tr>
+<tr>
+<td>sombrero</td>
+<td>100</td>
+<td>Headgear</td>
+<td>VFES_Headgear_Sombrero</td>
+</tr>
+<tr>
+<td>tomahawk</td>
+<td>210</td>
+<td>Ranged weapons</td>
+<td>VFES_Tomahawk</td>
+</tr>
+<tr>
+<td>wine</td>
+<td>33</td>
+<td>Drugs</td>
+<td>VFEM_Wine</td>
+</tr>
+<tr>
+<td>winebarrel</td>
+<td>95</td>
+<td>Production</td>
+<td>VFEM_WineBarrel</td>
 </tr>
 </tbody></table>
-
+<script>
+ $(document).ready(function() {
+    $('#myTable').DataTable();
+} );
+</script>
         <ul class="list-unstyled">
           <li>Bootstrap 4.5.0</li>
           <li>jsadasdary 3.5.1</li>
@@ -2735,119 +5038,6 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
-
-  <script>
-function sortTable(1) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (Number(x.innerHTML) > Number(y.innerHTML)) {
-			shouldSwitch = true;
-			break;
-}
-      } else if (dir == "desc") {
-        if (Number(x.innerHTML) < Number(y.innerHTML)) {
-			shouldSwitch = true;
-			break;
-}
-      }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
-
 
 </body>
 
